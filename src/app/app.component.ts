@@ -10,8 +10,7 @@ import { OverlayContainer } from '@angular/cdk/overlay';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  @HostBinding('class') componentCssClass;
-  selectedTheme: string = "dark-theme";
+  @HostBinding('class') componentCssClass: string;
 
   constructor(
     private electronService: ElectronService,
@@ -32,7 +31,7 @@ export class AppComponent {
   }
 
   onSetTheme(theme: string) {
-    if (theme === this.selectedTheme) {
+    if (theme === this.componentCssClass) {
       //ignore change
     } else {
       if (theme == 'dark-theme') {
@@ -47,10 +46,9 @@ export class AppComponent {
 
   resetTheme(theme: string, dark: boolean) {
     let classList = this.overlayContainer.getContainerElement().classList;
-    classList.remove(this.selectedTheme);
-    this.selectedTheme = theme;
-    classList.add(this.selectedTheme);
+    classList.remove(this.componentCssClass);
     this.componentCssClass = theme;
+    classList.add(this.componentCssClass);
     this.setDarkBackGround(dark);
   }
 
