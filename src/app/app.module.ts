@@ -7,16 +7,15 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { SharedModule } from './shared/shared.module';
 
-import { AppRoutingModule } from './core/modules/app-routing.module';
+import { AppRoutingModule } from './core/modules/app-routing/app-routing.module';
+import { MaterialDesignModule } from './core/modules/material-design/material-design.module';
 
 // NG Translate
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
-import { HomeModule } from './home/home.module';
-import { DetailModule } from './detail/detail.module';
-
 import { AppComponent } from './app.component';
+import { WelcomeComponent } from './page/welcome/welcome.component';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
@@ -24,15 +23,14 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
 }
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, WelcomeComponent],
   imports: [
     BrowserModule,
     FormsModule,
     HttpClientModule,
     SharedModule,
-    HomeModule,
-    DetailModule,
     AppRoutingModule,
+    MaterialDesignModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
