@@ -1,2 +1,18 @@
-<mat-toolbar>Material Design Components</mat-toolbar>
+<mat-toolbar color="primary">
+    Material Design Components
+    <span class="spacer"></span>
+    <button mat-raised-button color="accent" mat-button [matMenuTriggerFor]="menu" aria-label="Select Theme">
+        Select Theme
+    </button>
+    <mat-menu #menu="matMenu">
+        <button mat-menu-item (click)="onSetTheme('dark-theme')">
+            <mat-icon svgIcon="brightness-2"></mat-icon>
+            <span>Dark Theme</span>
+        </button>
+        <button mat-menu-item (click)="onSetTheme('light-theme')">
+            <mat-icon svgIcon="brightness-7"></mat-icon>
+            <span>Light Theme</span>
+        </button>
+    </mat-menu>
+</mat-toolbar>
 <router-outlet></router-outlet>

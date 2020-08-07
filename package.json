@@ -21,16 +21,17 @@
   "scripts": {
     "postinstall": "electron-builder install-app-deps",
     "ng": "ng",
-    "start": "npm-run-all -p electron:serve ng:serve",
+    "start": "npm-run-all -p copy-icons electron:serve ng:serve",
     "build": "npm run electron:serve-tsc && ng build --base-href ./",
     "build:dev": "npm run build -- -c dev",
     "build:prod": "npm run build -- -c production",
+    "copy-icons": "copyfiles -u 3 node_modules/@mdi/angular-material/mdi.svg src/assets",
     "ng:serve": "ng serve",
     "ng:serve:web": "ng serve -c web -o",
     "electron:serve-tsc": "tsc -p tsconfig-serve.json",
     "electron:serve": "wait-on tcp:4200 && npm run electron:serve-tsc && npx electron . --serve",
-    "electron:local": "npm run build:prod && npx electron .",
-    "electron:build": "npm run build:prod && electron-builder build",
+    "electron:local": "npm run copy-icons && npm run build:prod && npx electron .",
+    "electron:build": "npm run copy-icons && npm run build:prod && electron-builder build",
     "test": "ng test --watch=false",
     "test:watch": "ng test",
     "e2e": "npm run build:prod && cross-env TS_NODE_PROJECT='e2e/tsconfig.e2e.json' mocha --timeout 300000 --require ts-node/register e2e/**/*.e2e.ts",
@@ -97,6 +98,8 @@
     "@angular/animations": "^10.0.0 || ^11.0.0-0",
     "@angular/cdk": "10.1.2",
     "@angular/forms": "^10.0.0 || ^11.0.0-0",
-    "@angular/material": "10.1.2"
+    "@angular/material": "10.1.2",
+    "@mdi/angular-material": "5.4.55",
+    "copyfiles": "2.3.0"
   }
 }

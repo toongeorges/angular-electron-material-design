@@ -1,1 +1,57 @@
-@import "~@angular/material/prebuilt-themes/pink-bluegrey.css";
+//adding multiple themes as explained at https://stackoverflow.com/questions/47441036/switch-themes-in-angular-material-5
+//colours taken from https://material.io/design/color/the-color-system.html
+@import '~@angular/material/theming';
+
+// always include only once per project
+@include mat-core();
+
+$light-theme-primary: mat-palette($mat-teal);
+$light-theme-accent: mat-palette($mat-indigo);
+$light-theme-warn: mat-palette($mat-red);
+
+// create theme (use mat-dark-theme for themes with dark backgrounds)
+$light-theme: mat-light-theme(
+    $light-theme-primary,
+    $light-theme-accent,
+    $light-theme-warn
+);
+
+$dark-theme-primary: mat-palette($mat-pink);
+$dark-theme-accent: mat-palette($mat-lime);
+$dark-theme-warn: mat-palette($mat-red);
+
+// create theme (use mat-dark-theme for themes with dark backgrounds)
+$dark-theme: mat-dark-theme(
+    $dark-theme-primary,
+    $dark-theme-accent,
+    $dark-theme-warn
+);
+
+//default theme
+@include angular-material-theme($dark-theme);
+
+.light-theme {
+    @include angular-material-theme($light-theme);
+}
+
+.dark-theme {
+    @include angular-material-theme($dark-theme);
+}
+
+
+
+//theming below is for icons, see https://dev.materialdesignicons.com/getting-started/angular
+button.mat-menu-item {
+  line-height: 24px !important;
+}
+a.mat-menu-item > mat-icon {
+  margin-bottom: 14px;
+}
+.mat-icon svg {
+  height: 24px;
+  width: 24px;
+}
+.mat-step-icon-content .mat-icon svg {
+  height: 100%;
+  width: 100%;
+}
