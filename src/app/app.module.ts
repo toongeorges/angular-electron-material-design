@@ -19,6 +19,12 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { AppComponent } from './app.component';
 
 import { WelcomeComponent } from './page/welcome/welcome.component';
+import { ButtonComponent } from './page/button/button.component';
+import { IconComponent } from './page/icon/icon.component';
+import { MenuComponent } from './page/menu/menu.component';
+import { SidenavComponent } from './page/sidenav/sidenav.component';
+import { ToolbarComponent } from './page/toolbar/toolbar.component';
+import { ButtonToggleComponent } from './page/button-toggle/button-toggle.component';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
@@ -28,7 +34,13 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
 @NgModule({
   declarations: [
     AppComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    ButtonComponent,
+    IconComponent,
+    MenuComponent,
+    SidenavComponent,
+    ToolbarComponent,
+    ButtonToggleComponent
   ],
   imports: [
     BrowserModule,
