@@ -40,6 +40,12 @@ $dark-theme: mat-dark-theme(
 
 
 
+.button-without-padding {
+    padding: 0px !important;
+}
+
+
+
 //theming below is for icons, see https://dev.materialdesignicons.com/getting-started/angular
 button.mat-menu-item {
   line-height: 24px !important;
