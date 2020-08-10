@@ -25,6 +25,8 @@ import { MenuComponent } from './page/menu/menu.component';
 import { SidenavComponent } from './page/sidenav/sidenav.component';
 import { ToolbarComponent } from './page/toolbar/toolbar.component';
 import { ButtonToggleComponent } from './page/button-toggle/button-toggle.component';
+import { DividerComponent } from './page/divider/divider.component';
+import { ListComponent } from './page/list/list.component';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
@@ -40,7 +42,9 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
     MenuComponent,
     SidenavComponent,
     ToolbarComponent,
-    ButtonToggleComponent
+    ButtonToggleComponent,
+    DividerComponent,
+    ListComponent
   ],
   imports: [
     BrowserModule,

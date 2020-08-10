@@ -1,1 +1,14 @@
-<p>button-toggle works!</p>
+<mat-button-toggle-group #group="matButtonToggleGroup">
+  <mat-button-toggle value="left" aria-label="Text align left">
+    <mat-icon svgIcon="format-align-left"></mat-icon>
+  </mat-button-toggle>
+  <mat-button-toggle value="center" aria-label="Text align center">
+    <mat-icon svgIcon="format-align-center"></mat-icon>
+  </mat-button-toggle>
+  <mat-button-toggle value="right" aria-label="Text align right">
+    <mat-icon svgIcon="format-align-right"></mat-icon>
+  </mat-button-toggle>
+  <mat-button-toggle value="justify" disabled aria-label="Text align justify">
+    <mat-icon svgIcon="format-align-justify"></mat-icon>
+  </mat-button-toggle>
+</mat-button-toggle-group>

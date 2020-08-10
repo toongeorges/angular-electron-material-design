@@ -5,7 +5,9 @@ import { OverlayModule } from '@angular/cdk/overlay';
 
 import { MatButtonModule } from '@angular/material/button';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
+import { MatDividerModule } from '@angular/material/divider';
 import { MatIconModule } from '@angular/material/icon';
+import { MatListModule } from '@angular/material/list';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -18,7 +20,9 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     OverlayModule,
     MatButtonModule,
     MatButtonToggleModule,
+    MatDividerModule,
     MatIconModule,
+    MatListModule,
     MatMenuModule,
     MatSidenavModule,
     MatToolbarModule
@@ -26,7 +30,9 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     OverlayModule,
     MatButtonModule,
     MatButtonToggleModule,
+    MatDividerModule,
     MatIconModule,
+    MatListModule,
     MatMenuModule,
     MatSidenavModule,
     MatToolbarModule

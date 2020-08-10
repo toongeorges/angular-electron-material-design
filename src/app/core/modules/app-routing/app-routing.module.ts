@@ -7,11 +7,15 @@ import { IconComponent } from 'app/page/icon/icon.component';
 import { MenuComponent } from 'app/page/menu/menu.component';
 import { SidenavComponent } from 'app/page/sidenav/sidenav.component';
 import { ToolbarComponent } from 'app/page/toolbar/toolbar.component';
+import { DividerComponent } from 'app/page/divider/divider.component';
+import { ListComponent } from 'app/page/list/list.component';
 
 const routes: Routes = [
   { path: 'button', component: ButtonComponent },
   { path: 'button-toggle', component: ButtonToggleComponent },
+  { path: 'divider', component: DividerComponent },
   { path: 'icon', component: IconComponent },
+  { path: 'list', component: ListComponent },
   { path: 'menu', component: MenuComponent },
   { path: 'sidenav', component: SidenavComponent },
   { path: 'toolbar', component: ToolbarComponent },
