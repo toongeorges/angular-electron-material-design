@@ -16,9 +16,11 @@ import { CheckboxComponent } from 'app/page/checkbox/checkbox.component';
 import { AutocompleteComponent } from 'app/page/autocomplete/autocomplete.component';
 import { SlideToggleComponent } from 'app/page/slide-toggle/slide-toggle.component';
 import { RadioButtonComponent } from 'app/page/radio-button/radio-button.component';
+import { BadgeComponent } from 'app/page/badge/badge.component';
 
 const routes: Routes = [
   { path: 'autocomplete', component: AutocompleteComponent },
+  { path: 'badge', component: BadgeComponent },
   { path: 'button', component: ButtonComponent },
   { path: 'button-toggle', component: ButtonToggleComponent },
   { path: 'checkbox', component: CheckboxComponent },

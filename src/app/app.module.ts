@@ -35,6 +35,7 @@ import { CheckboxComponent } from './page/checkbox/checkbox.component';
 import { AutocompleteComponent } from './page/autocomplete/autocomplete.component';
 import { SlideToggleComponent } from './page/slide-toggle/slide-toggle.component';
 import { RadioButtonComponent } from './page/radio-button/radio-button.component';
+import { BadgeComponent } from './page/badge/badge.component';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
@@ -59,7 +60,8 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
     CheckboxComponent,
     AutocompleteComponent,
     SlideToggleComponent,
-    RadioButtonComponent
+    RadioButtonComponent,
+    BadgeComponent
   ],
   imports: [
     BrowserModule,
