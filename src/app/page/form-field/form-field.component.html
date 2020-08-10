@@ -1,0 +1,86 @@
+<div class="parent">
+    <div class="column">
+        <mat-form-field appearance="standard" class="input-style">
+            <mat-label>Input</mat-label>
+            <input matInput>
+        </mat-form-field>
+        <br>
+        <mat-form-field appearance="standard" class="input-style">
+            <mat-label>Select</mat-label>
+            <mat-select>
+            <mat-option value="one">One</mat-option>
+            <mat-option value="two">Two</mat-option>
+            <mat-option value="three">Three</mat-option>
+            </mat-select>
+        </mat-form-field>
+        <br>
+        <mat-form-field appearance="standard" class="input-style">
+            <mat-label>Textarea</mat-label>
+            <textarea matInput cdkTextareaAutosize="true" cdkAutosizeMinRows="2" cdkAutosizeMaxRows="5"></textarea>
+        </mat-form-field>
+        <br>
+        <mat-form-field appearance="standard" class="input-style">
+            <mat-label>Enter your password</mat-label>
+            <input matInput [type]="hide ? 'password' : 'text'">
+            <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+            <mat-icon svgIcon="{{hide ? 'eye-off' : 'eye'}}"></mat-icon>
+            </button>
+        </mat-form-field>
+    </div>
+    <div class="column">
+        <mat-form-field appearance="fill" class="input-style">
+            <mat-label>Input</mat-label>
+            <input matInput>
+        </mat-form-field>
+        <br>
+        <mat-form-field appearance="fill" class="input-style">
+            <mat-label>Select</mat-label>
+            <mat-select>
+            <mat-option value="one">One</mat-option>
+            <mat-option value="two">Two</mat-option>
+            <mat-option value="three">Three</mat-option>
+            </mat-select>
+        </mat-form-field>
+        <br>
+        <mat-form-field appearance="fill" class="input-style">
+            <mat-label>Textarea</mat-label>
+            <textarea matInput cdkTextareaAutosize="true" cdkAutosizeMinRows="2" cdkAutosizeMaxRows="5"></textarea>
+        </mat-form-field>
+        <br>
+        <mat-form-field appearance="fill" class="input-style">
+            <mat-label>Enter your password</mat-label>
+            <input matInput [type]="hide ? 'password' : 'text'">
+            <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+            <mat-icon svgIcon="{{hide ? 'eye-off' : 'eye'}}"></mat-icon>
+            </button>
+        </mat-form-field>
+    </div>
+    <div class="column">
+        <mat-form-field appearance="outline" class="input-style">
+            <mat-label>Input</mat-label>
+            <input matInput>
+        </mat-form-field>
+        <br>
+        <mat-form-field appearance="outline" class="input-style">
+            <mat-label>Select</mat-label>
+            <mat-select>
+            <mat-option value="one">One</mat-option>
+            <mat-option value="two">Two</mat-option>
+            <mat-option value="three">Three</mat-option>
+            </mat-select>
+        </mat-form-field>
+        <br>
+        <mat-form-field appearance="outline" class="input-style">
+            <mat-label>Textarea</mat-label>
+            <textarea matInput cdkTextareaAutosize="true" cdkAutosizeMinRows="2" cdkAutosizeMaxRows="5"></textarea>
+        </mat-form-field>
+        <br>
+        <mat-form-field appearance="outline" class="input-style">
+            <mat-label>Enter your password</mat-label>
+            <input matInput [type]="hide ? 'password' : 'text'">
+            <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+            <mat-icon svgIcon="{{hide ? 'eye-off' : 'eye'}}"></mat-icon>
+            </button>
+        </mat-form-field>
+    </div>
+</div>

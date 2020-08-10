@@ -9,14 +9,22 @@ import { SidenavComponent } from 'app/page/sidenav/sidenav.component';
 import { ToolbarComponent } from 'app/page/toolbar/toolbar.component';
 import { DividerComponent } from 'app/page/divider/divider.component';
 import { ListComponent } from 'app/page/list/list.component';
+import { FormFieldComponent } from 'app/page/form-field/form-field.component';
+import { SelectComponent } from 'app/page/select/select.component';
+import { InputComponent } from 'app/page/input/input.component';
+import { CheckboxComponent } from 'app/page/checkbox/checkbox.component';
 
 const routes: Routes = [
   { path: 'button', component: ButtonComponent },
   { path: 'button-toggle', component: ButtonToggleComponent },
+  { path: 'checkbox', component: CheckboxComponent },
   { path: 'divider', component: DividerComponent },
+  { path: 'form-field', component: FormFieldComponent },
   { path: 'icon', component: IconComponent },
+  { path: 'input', component: InputComponent },
   { path: 'list', component: ListComponent },
   { path: 'menu', component: MenuComponent },
+  { path: 'select', component: SelectComponent },
   { path: 'sidenav', component: SidenavComponent },
   { path: 'toolbar', component: ToolbarComponent },
   { path: '**', component: WelcomeComponent }

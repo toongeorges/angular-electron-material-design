@@ -4,7 +4,8 @@ import '../polyfills';
 import { BrowserModule, DomSanitizer } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+//The email input field on the URL /input requires ReactiveFormsModule instead of FormsModule
+import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { SharedModule } from './shared/shared.module';
 
@@ -27,6 +28,10 @@ import { ToolbarComponent } from './page/toolbar/toolbar.component';
 import { ButtonToggleComponent } from './page/button-toggle/button-toggle.component';
 import { DividerComponent } from './page/divider/divider.component';
 import { ListComponent } from './page/list/list.component';
+import { FormFieldComponent } from './page/form-field/form-field.component';
+import { SelectComponent } from './page/select/select.component';
+import { InputComponent } from './page/input/input.component';
+import { CheckboxComponent } from './page/checkbox/checkbox.component';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
@@ -44,12 +49,16 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
     ToolbarComponent,
     ButtonToggleComponent,
     DividerComponent,
-    ListComponent
+    ListComponent,
+    FormFieldComponent,
+    SelectComponent,
+    InputComponent,
+    CheckboxComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    FormsModule,
+    ReactiveFormsModule,
     HttpClientModule,
     SharedModule,
     AppRoutingModule,

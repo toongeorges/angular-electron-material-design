@@ -1,0 +1,34 @@
+<mat-form-field class="input-style">
+  <mat-label>Clearable input</mat-label>
+  <input matInput type="text" [(ngModel)]="value">
+  <button mat-button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''">
+    <mat-icon svgIcon="close"></mat-icon>
+  </button>
+</mat-form-field>
+<br>
+<mat-form-field class="example-full-width" class="input-style">
+    <mat-label>Email</mat-label>
+    <input matInput [formControl]="emailFormControl" [errorStateMatcher]="matcher"
+            placeholder="Ex. pat@example.com">
+    <mat-hint>Errors appear instantly!</mat-hint>
+    <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+        Please enter a valid email address
+    </mat-error>
+    <mat-error *ngIf="emailFormControl.hasError('required')">
+        Email is <strong>required</strong>
+    </mat-error>
+</mat-form-field>
+<br>
+<mat-form-field class="input-style">
+    <mat-label>Message</mat-label>
+    <input matInput #message maxlength="256" placeholder="Ex. I need help with...">
+    <mat-hint align="start"><strong>Don't disclose personal info</strong> </mat-hint>
+    <mat-hint align="end">{{message.value.length}} / 256</mat-hint>
+</mat-form-field>
+<br>
+<mat-form-field class="input-style">
+    <mat-label>Telephone</mat-label>
+    <span matPrefix>+1 &nbsp;</span>
+    <input type="tel" matInput placeholder="555-555-1234">
+    <mat-icon matSuffix svgIcon="pencil"></mat-icon>
+</mat-form-field>

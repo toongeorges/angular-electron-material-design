@@ -44,13 +44,18 @@ $dark-theme: mat-dark-theme(
 button.mat-menu-item {
   line-height: 24px !important;
 }
+
 a.mat-menu-item > mat-icon {
   margin-bottom: 14px;
 }
+
+/* do NOT enable this, otherwise the icons in a formfield are broken!  Check the page /input
 .mat-icon svg {
   height: 24px;
   width: 24px;
 }
+*/
+
 .mat-step-icon-content .mat-icon svg {
   height: 100%;
   width: 100%;
