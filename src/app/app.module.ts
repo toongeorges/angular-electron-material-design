@@ -32,6 +32,9 @@ import { FormFieldComponent } from './page/form-field/form-field.component';
 import { SelectComponent } from './page/select/select.component';
 import { InputComponent } from './page/input/input.component';
 import { CheckboxComponent } from './page/checkbox/checkbox.component';
+import { AutocompleteComponent } from './page/autocomplete/autocomplete.component';
+import { SlideToggleComponent } from './page/slide-toggle/slide-toggle.component';
+import { RadioButtonComponent } from './page/radio-button/radio-button.component';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
@@ -53,7 +56,10 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
     FormFieldComponent,
     SelectComponent,
     InputComponent,
-    CheckboxComponent
+    CheckboxComponent,
+    AutocompleteComponent,
+    SlideToggleComponent,
+    RadioButtonComponent
   ],
   imports: [
     BrowserModule,

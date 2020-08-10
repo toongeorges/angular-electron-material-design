@@ -13,8 +13,12 @@ import { FormFieldComponent } from 'app/page/form-field/form-field.component';
 import { SelectComponent } from 'app/page/select/select.component';
 import { InputComponent } from 'app/page/input/input.component';
 import { CheckboxComponent } from 'app/page/checkbox/checkbox.component';
+import { AutocompleteComponent } from 'app/page/autocomplete/autocomplete.component';
+import { SlideToggleComponent } from 'app/page/slide-toggle/slide-toggle.component';
+import { RadioButtonComponent } from 'app/page/radio-button/radio-button.component';
 
 const routes: Routes = [
+  { path: 'autocomplete', component: AutocompleteComponent },
   { path: 'button', component: ButtonComponent },
   { path: 'button-toggle', component: ButtonToggleComponent },
   { path: 'checkbox', component: CheckboxComponent },
@@ -24,8 +28,10 @@ const routes: Routes = [
   { path: 'input', component: InputComponent },
   { path: 'list', component: ListComponent },
   { path: 'menu', component: MenuComponent },
+  { path: 'radio-button', component: RadioButtonComponent },
   { path: 'select', component: SelectComponent },
   { path: 'sidenav', component: SidenavComponent },
+  { path: 'slide-toggle', component: SlideToggleComponent },
   { path: 'toolbar', component: ToolbarComponent },
   { path: '**', component: WelcomeComponent }
 ];
