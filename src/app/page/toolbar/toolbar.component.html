@@ -1,1 +1,56 @@
-<p>toolbar works!</p>
+<mat-toolbar>
+  <button mat-icon-button aria-label="Example icon-button with menu icon">
+    <mat-icon svgIcon="menu"></mat-icon>
+  </button>
+  <span>My App</span>
+  <span class="spacer"></span>
+  <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+    <mat-icon svgIcon="heart"></mat-icon>
+  </button>
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+    <mat-icon svgIcon="share-variant"></mat-icon>
+  </button>
+</mat-toolbar>
+<br>
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <span>Custom Toolbar</span>
+  </mat-toolbar-row>
+
+  <mat-toolbar-row>
+    <span>Second Line</span>
+    <span class="spacer"></span>
+    <mat-icon svgIcon="music-clef-treble"></mat-icon>
+  </mat-toolbar-row>
+
+  <mat-toolbar-row>
+    <span>Third Line</span>
+    <span class="spacer"></span>
+    <mat-icon svgIcon="music"></mat-icon>
+    <mat-icon svgIcon="music-note"></mat-icon>
+    <mat-icon svgIcon="music-rest-half"></mat-icon>
+    <mat-icon svgIcon="music-note-sixteenth"></mat-icon>
+    <mat-icon svgIcon="music-rest-sixteenth"></mat-icon>
+    <mat-icon svgIcon="music-note-quarter"></mat-icon>
+    <mat-icon svgIcon="music"></mat-icon>
+    <mat-icon svgIcon="music-note-half"></mat-icon>
+  </mat-toolbar-row>
+</mat-toolbar>
+<br>
+<mat-toolbar color="accent">
+  <button mat-icon-button>
+    <mat-icon svgIcon="cards-heart"></mat-icon>
+  </button>
+  <span class="spacer"></span>
+  <button mat-icon-button>
+    <mat-icon svgIcon="cards-diamond"></mat-icon>
+  </button>
+  <span class="spacer"></span>
+  <button mat-icon-button>
+    <mat-icon svgIcon="cards-club"></mat-icon>
+  </button>
+  <span class="spacer"></span>
+  <button mat-icon-button>
+    <mat-icon svgIcon="cards-spade"></mat-icon>
+  </button>
+</mat-toolbar>
