@@ -17,10 +17,12 @@ import { AutocompleteComponent } from 'app/page/autocomplete/autocomplete.compon
 import { SlideToggleComponent } from 'app/page/slide-toggle/slide-toggle.component';
 import { RadioButtonComponent } from 'app/page/radio-button/radio-button.component';
 import { BadgeComponent } from 'app/page/badge/badge.component';
+import { BottomSheetComponent } from 'app/page/bottom-sheet/bottom-sheet.component';
 
 const routes: Routes = [
   { path: 'autocomplete', component: AutocompleteComponent },
   { path: 'badge', component: BadgeComponent },
+  { path: 'bottom-sheet', component: BottomSheetComponent },
   { path: 'button', component: ButtonComponent },
   { path: 'button-toggle', component: ButtonToggleComponent },
   { path: 'checkbox', component: CheckboxComponent },

@@ -5,6 +5,7 @@ import { OverlayModule } from '@angular/cdk/overlay';
 
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { MatBadgeModule } from '@angular/material/badge';
+import { MatBottomSheetModule } from '@angular/material/bottom-sheet';
 import { MatButtonModule } from '@angular/material/button';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatCheckboxModule } from '@angular/material/checkbox';
@@ -28,6 +29,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     OverlayModule,
     MatAutocompleteModule,
     MatBadgeModule,
+    MatBottomSheetModule,
     MatButtonModule,
     MatButtonToggleModule,
     MatCheckboxModule,
@@ -46,6 +48,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     OverlayModule,
     MatAutocompleteModule,
     MatBadgeModule,
+    MatBottomSheetModule,
     MatButtonModule,
     MatButtonToggleModule,
     MatCheckboxModule,

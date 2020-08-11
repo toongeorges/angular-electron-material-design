@@ -44,6 +44,12 @@ $dark-theme: mat-dark-theme(
     padding: 0px !important;
 }
 
+.bottom-sheet {
+  width: calc(100vw - 16px);
+  min-width: calc(100vw - 16px) !important;
+  max-width: calc(100vw - 16px) !important;
+}
+
 
 
 //theming below is for icons, see https://dev.materialdesignicons.com/getting-started/angular

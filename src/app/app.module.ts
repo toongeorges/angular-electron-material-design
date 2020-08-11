@@ -36,6 +36,8 @@ import { AutocompleteComponent } from './page/autocomplete/autocomplete.componen
 import { SlideToggleComponent } from './page/slide-toggle/slide-toggle.component';
 import { RadioButtonComponent } from './page/radio-button/radio-button.component';
 import { BadgeComponent } from './page/badge/badge.component';
+import { BottomSheetComponent } from './page/bottom-sheet/bottom-sheet.component';
+import { BottomSheetContentComponent } from './page/bottom-sheet/bottom-sheet-content/bottom-sheet-content.component';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
@@ -61,7 +63,9 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
     AutocompleteComponent,
     SlideToggleComponent,
     RadioButtonComponent,
-    BadgeComponent
+    BadgeComponent,
+    BottomSheetComponent,
+    BottomSheetContentComponent
   ],
   imports: [
     BrowserModule,
