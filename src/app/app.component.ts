@@ -1,4 +1,4 @@
-import { Component, HostBinding } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ElectronService } from './core/services/electron/electron.service';
 import { TranslateService } from '@ngx-translate/core';
 import { AppConfig } from '../environments/environment';
@@ -9,8 +9,8 @@ import { OverlayContainer } from '@angular/cdk/overlay';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
-  @HostBinding('class') componentCssClass: string;
+export class AppComponent implements OnInit {
+  componentCssClass: string;
 
   constructor(
     private electronService: ElectronService,
@@ -30,34 +30,36 @@ export class AppComponent {
     }
   }
 
+  ngOnInit(): void {
+    this.onSetTheme('dark-theme');
+  }
+
   onSetTheme(theme: string) {
     if (theme === this.componentCssClass) {
       //ignore change
     } else {
       if (theme == 'dark-theme') {
-        this.resetTheme(theme, true);
+        this.resetTheme(theme);
       } else if (theme == 'light-theme') {
-        this.resetTheme(theme, false);
+        this.resetTheme(theme);
       } else {
         console.error("Unknown theme: " + theme);
       }
     }
   }
 
-  resetTheme(theme: string, dark: boolean) {
-    let classList = this.overlayContainer.getContainerElement().classList;
-    classList.remove(this.componentCssClass);
-    this.componentCssClass = theme;
-    classList.add(this.componentCssClass);
-    this.setDarkBackGround(dark);
-  }
-
-  setDarkBackGround(dark: boolean) {
+  resetTheme(theme: string) { //does not reset the style of the outer scrollbars on the body element though
     const body = document.getElementsByTagName('body')[0];
-    if (dark) {
-      body.classList.add('mat-app-background');
-    } else {
-      body.classList.remove('mat-app-background');
+
+    if (this.componentCssClass) {
+      //remove the old style
+      body.classList.remove(this.componentCssClass);
+      this.overlayContainer.getContainerElement().classList.remove(this.componentCssClass);
     }
+
+    this.componentCssClass = theme;
+    //set the new style
+    body.classList.add(this.componentCssClass);
+    this.overlayContainer.getContainerElement().classList.add(this.componentCssClass);
   }
 }
