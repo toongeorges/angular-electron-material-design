@@ -32,3 +32,9 @@
     <input type="tel" matInput placeholder="555-555-1234">
     <mat-icon matSuffix svgIcon="pencil"></mat-icon>
 </mat-form-field>
+<br>
+<mat-form-field class="input-style" (click)="openFolderDialog()">
+    <mat-label>Folder</mat-label>
+    <input type="text" matInput [(ngModel)]="folder" placeholder="Select a Folder">
+    <mat-icon matSuffix svgIcon="folder"></mat-icon>
+</mat-form-field>
