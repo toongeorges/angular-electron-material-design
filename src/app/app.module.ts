@@ -39,6 +39,7 @@ import { BadgeComponent } from './page/badge/badge.component';
 import { BottomSheetComponent } from './page/bottom-sheet/bottom-sheet.component';
 import { BottomSheetContentComponent } from './page/bottom-sheet/bottom-sheet-content/bottom-sheet-content.component';
 import { CardComponent } from './page/card/card.component';
+import { ChipsComponent } from './page/chips/chips.component';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
@@ -67,7 +68,8 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
     BadgeComponent,
     BottomSheetComponent,
     BottomSheetContentComponent,
-    CardComponent
+    CardComponent,
+    ChipsComponent
   ],
   imports: [
     BrowserModule,

@@ -19,6 +19,7 @@ import { RadioButtonComponent } from 'app/page/radio-button/radio-button.compone
 import { BadgeComponent } from 'app/page/badge/badge.component';
 import { BottomSheetComponent } from 'app/page/bottom-sheet/bottom-sheet.component';
 import { CardComponent } from 'app/page/card/card.component';
+import { ChipsComponent } from 'app/page/chips/chips.component';
 
 const routes: Routes = [
   { path: 'autocomplete', component: AutocompleteComponent },
@@ -28,6 +29,7 @@ const routes: Routes = [
   { path: 'button-toggle', component: ButtonToggleComponent },
   { path: 'card', component: CardComponent },
   { path: 'checkbox', component: CheckboxComponent },
+  { path: 'chips', component: ChipsComponent },
   { path: 'divider', component: DividerComponent },
   { path: 'form-field', component: FormFieldComponent },
   { path: 'icon', component: IconComponent },
