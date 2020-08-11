@@ -11,6 +11,7 @@ import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatCardModule } from '@angular/material/card';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatChipsModule } from '@angular/material/chips';
+import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
@@ -23,12 +24,14 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatToolbarModule } from '@angular/material/toolbar';
 
+import { MatMomentDateModule } from "@angular/material-moment-adapter"; //for MatDatepickerModule
 
 @NgModule({
   declarations: [],
   imports: [
     CommonModule,
     OverlayModule,
+    MatMomentDateModule,
     MatAutocompleteModule,
     MatBadgeModule,
     MatBottomSheetModule,
@@ -37,6 +40,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     MatCardModule,
     MatCheckboxModule,
     MatChipsModule,
+    MatDatepickerModule,
     MatDividerModule,
     MatFormFieldModule,
     MatIconModule,
@@ -50,6 +54,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     MatToolbarModule
   ], exports: [
     OverlayModule,
+    MatMomentDateModule,
     MatAutocompleteModule,
     MatBadgeModule,
     MatBottomSheetModule,
@@ -58,6 +63,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     MatCardModule,
     MatCheckboxModule,
     MatChipsModule,
+    MatDatepickerModule,
     MatDividerModule,
     MatFormFieldModule,
     MatIconModule,

@@ -40,6 +40,7 @@ import { BottomSheetComponent } from './page/bottom-sheet/bottom-sheet.component
 import { BottomSheetContentComponent } from './page/bottom-sheet/bottom-sheet-content/bottom-sheet-content.component';
 import { CardComponent } from './page/card/card.component';
 import { ChipsComponent } from './page/chips/chips.component';
+import { DatepickerComponent } from './page/datepicker/datepicker.component';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
@@ -69,7 +70,8 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
     BottomSheetComponent,
     BottomSheetContentComponent,
     CardComponent,
-    ChipsComponent
+    ChipsComponent,
+    DatepickerComponent
   ],
   imports: [
     BrowserModule,

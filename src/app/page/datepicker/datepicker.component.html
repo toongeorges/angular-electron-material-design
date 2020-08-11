@@ -1,0 +1,20 @@
+<h3>Datepicker with custom date classes</h3>
+<p>
+<mat-form-field appearance="fill">
+  <mat-label>Choose a date</mat-label>
+  <input matInput [matDatepicker]="picker1">
+  <mat-datepicker-toggle matSuffix [for]="picker1">
+      <mat-icon matDatepickerToggleIcon svgIcon="calendar"></mat-icon>
+  </mat-datepicker-toggle>
+  <mat-datepicker [dateClass]="dateClass" #picker1></mat-datepicker>
+</mat-form-field>
+</p>
+<h3>Datepicker with touch UI</h3>
+<p>
+<mat-form-field class="example-full-width" appearance="fill">
+  <mat-label>Choose a date</mat-label>
+  <input matInput [matDatepicker]="picker2">
+  <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+  <mat-datepicker touchUi #picker2></mat-datepicker>
+</mat-form-field>
+</p>

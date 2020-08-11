@@ -20,6 +20,7 @@ import { BadgeComponent } from 'app/page/badge/badge.component';
 import { BottomSheetComponent } from 'app/page/bottom-sheet/bottom-sheet.component';
 import { CardComponent } from 'app/page/card/card.component';
 import { ChipsComponent } from 'app/page/chips/chips.component';
+import { DatepickerComponent } from 'app/page/datepicker/datepicker.component';
 
 const routes: Routes = [
   { path: 'autocomplete', component: AutocompleteComponent },
@@ -30,6 +31,7 @@ const routes: Routes = [
   { path: 'card', component: CardComponent },
   { path: 'checkbox', component: CheckboxComponent },
   { path: 'chips', component: ChipsComponent },
+  { path: 'datepicker', component: DatepickerComponent },
   { path: 'divider', component: DividerComponent },
   { path: 'form-field', component: FormFieldComponent },
   { path: 'icon', component: IconComponent },

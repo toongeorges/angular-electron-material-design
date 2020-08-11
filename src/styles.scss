@@ -30,7 +30,7 @@ $dark-theme: mat-dark-theme(
 //default theme
 @include angular-material-theme($dark-theme);
 
-//the styles below are for the scrollbar
+//styles for the scrollbar -->
 /* width */
 ::-webkit-scrollbar {
     width: 8px; //for vertical scrollbars
@@ -53,11 +53,12 @@ $dark-theme: mat-dark-theme(
 ::-webkit-scrollbar-thumb:hover {
     background: darkgrey; //this appears not to be reset when the style is reset, darkgrey #A9A9A9 is lighter than grey #808080
 }
+//<-- styles for the scrollbar
 
 .light-theme {
     @include angular-material-theme($light-theme);
 
-    //the styles below are for the scrollbar
+    //styles for the scrollbar -->
     /* Track */
     ::-webkit-scrollbar-track {
         box-shadow: inset 0 0 2px mat-color($light-theme-accent, 600);
@@ -74,12 +75,19 @@ $dark-theme: mat-dark-theme(
     ::-webkit-scrollbar-thumb:hover {
         background: mat-color($light-theme-accent, 400);
     }
+    //<-- styles for the scrollbar
+
+    //the datepicker styles do not work if placed in the component scss, it has to be placed here
+    .example-custom-date-class {
+        background: mat-color($light-theme-accent);
+        border-radius: 100%;
+    }
 }
 
 .dark-theme {
     @include angular-material-theme($dark-theme);
 
-    //the styles below are for the scrollbar
+    //styles for the scrollbar -->
     /* Track */
     ::-webkit-scrollbar-track {
         box-shadow: inset 0 0 2px mat-color($dark-theme-accent, 400);
@@ -95,6 +103,13 @@ $dark-theme: mat-dark-theme(
     /* Handle on hover */
     ::-webkit-scrollbar-thumb:hover {
         background: mat-color($dark-theme-accent, 600);
+    }
+    //<-- styles for the scrollbar
+
+    //the datepicker styles do not work if placed in the component scss, it has to be placed here
+    .example-custom-date-class {
+        background: mat-color($dark-theme-accent);
+        border-radius: 100%;
     }
 }
 
