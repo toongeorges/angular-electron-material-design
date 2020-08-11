@@ -18,6 +18,7 @@ import { SlideToggleComponent } from 'app/page/slide-toggle/slide-toggle.compone
 import { RadioButtonComponent } from 'app/page/radio-button/radio-button.component';
 import { BadgeComponent } from 'app/page/badge/badge.component';
 import { BottomSheetComponent } from 'app/page/bottom-sheet/bottom-sheet.component';
+import { CardComponent } from 'app/page/card/card.component';
 
 const routes: Routes = [
   { path: 'autocomplete', component: AutocompleteComponent },
@@ -25,6 +26,7 @@ const routes: Routes = [
   { path: 'bottom-sheet', component: BottomSheetComponent },
   { path: 'button', component: ButtonComponent },
   { path: 'button-toggle', component: ButtonToggleComponent },
+  { path: 'card', component: CardComponent },
   { path: 'checkbox', component: CheckboxComponent },
   { path: 'divider', component: DividerComponent },
   { path: 'form-field', component: FormFieldComponent },

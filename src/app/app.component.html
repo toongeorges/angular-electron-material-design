@@ -21,7 +21,7 @@
 </mat-toolbar>
 <mat-sidenav-container>
     <!-- body has a margin of 8px and toolbar has a height of 64px, 8 + 64 = 72  -->
-    <mat-sidenav #drawer mode="side" opened="true" fixedInViewport="true" fixedTopGap="72">
+    <mat-sidenav #drawer mode="side" opened="true">
         <mat-button-toggle-group name="menu" vertical="true" aria-label="Menu">
             <mat-button-toggle routerLink="home"><mat-icon svgIcon="home"></mat-icon></mat-button-toggle>
             <mat-button-toggle routerLink="autocomplete">Autocomplete</mat-button-toggle>
@@ -29,6 +29,7 @@
             <mat-button-toggle routerLink="bottom-sheet">Bottom Sheet</mat-button-toggle>
             <mat-button-toggle routerLink="button">Button</mat-button-toggle>
             <mat-button-toggle routerLink="button-toggle">Button Toggle</mat-button-toggle>
+            <mat-button-toggle routerLink="card">Card</mat-button-toggle>
             <mat-button-toggle routerLink="checkbox">Checkbox</mat-button-toggle>
             <mat-button-toggle routerLink="divider">Divider</mat-button-toggle>
             <mat-button-toggle routerLink="form-field">Form Field</mat-button-toggle>

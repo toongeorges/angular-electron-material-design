@@ -8,6 +8,7 @@ import { MatBadgeModule } from '@angular/material/badge';
 import { MatBottomSheetModule } from '@angular/material/bottom-sheet';
 import { MatButtonModule } from '@angular/material/button';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
+import { MatCardModule } from '@angular/material/card';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -32,6 +33,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     MatBottomSheetModule,
     MatButtonModule,
     MatButtonToggleModule,
+    MatCardModule,
     MatCheckboxModule,
     MatDividerModule,
     MatFormFieldModule,
@@ -51,6 +53,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     MatBottomSheetModule,
     MatButtonModule,
     MatButtonToggleModule,
+    MatCardModule,
     MatCheckboxModule,
     MatDividerModule,
     MatFormFieldModule,

@@ -4,4 +4,5 @@
 
 .content {
   padding: 8px;
+  height: calc(100vh - 96px); // 96px = 64px for header + 8px body top-margin + 8px body bottom-margin + 8px top-padding + 8px bottom-padding
 }
