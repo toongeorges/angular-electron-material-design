@@ -22,6 +22,7 @@ import { CardComponent } from 'app/page/card/card.component';
 import { ChipsComponent } from 'app/page/chips/chips.component';
 import { DatepickerComponent } from 'app/page/datepicker/datepicker.component';
 import { DialogComponent } from 'app/page/dialog/dialog.component';
+import { ExpansionPanelComponent } from 'app/page/expansion-panel/expansion-panel.component';
 
 const routes: Routes = [
   { path: 'autocomplete', component: AutocompleteComponent },
@@ -35,6 +36,7 @@ const routes: Routes = [
   { path: 'datepicker', component: DatepickerComponent },
   { path: 'dialog', component: DialogComponent },
   { path: 'divider', component: DividerComponent },
+  { path: 'expansion-panel', component: ExpansionPanelComponent },
   { path: 'form-field', component: FormFieldComponent },
   { path: 'icon', component: IconComponent },
   { path: 'input', component: InputComponent },
