@@ -25,6 +25,7 @@ import { DialogComponent } from 'app/page/dialog/dialog.component';
 import { ExpansionPanelComponent } from 'app/page/expansion-panel/expansion-panel.component';
 import { GridListComponent } from 'app/page/grid-list/grid-list.component';
 import { PaginatorComponent } from 'app/page/paginator/paginator.component';
+import { ProgressBarComponent } from 'app/page/progress-bar/progress-bar.component';
 
 const routes: Routes = [
   { path: 'autocomplete', component: AutocompleteComponent },
@@ -46,6 +47,7 @@ const routes: Routes = [
   { path: 'list', component: ListComponent },
   { path: 'menu', component: MenuComponent },
   { path: 'paginator', component: PaginatorComponent },
+  { path: 'progress-bar', component: ProgressBarComponent },
   { path: 'radio-button', component: RadioButtonComponent },
   { path: 'select', component: SelectComponent },
   { path: 'sidenav', component: SidenavComponent },

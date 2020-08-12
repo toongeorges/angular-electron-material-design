@@ -22,9 +22,11 @@ import { MatInputModule } from '@angular/material/input';
 import { MatListModule } from '@angular/material/list';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatSelectModule } from '@angular/material/select';
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatSliderModule } from '@angular/material/slider';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatToolbarModule } from '@angular/material/toolbar';
 
@@ -55,9 +57,11 @@ import { MatMomentDateModule } from "@angular/material-moment-adapter"; //for Ma
     MatListModule,
     MatMenuModule,
     MatPaginatorModule,
+    MatProgressBarModule,
     MatRadioModule,
     MatSelectModule,
     MatSidenavModule,
+    MatSliderModule,
     MatSlideToggleModule,
     MatToolbarModule
   ], exports: [
@@ -82,9 +86,11 @@ import { MatMomentDateModule } from "@angular/material-moment-adapter"; //for Ma
     MatListModule,
     MatMenuModule,
     MatPaginatorModule,
+    MatProgressBarModule,
     MatRadioModule,
     MatSelectModule,
     MatSidenavModule,
+    MatSliderModule,
     MatSlideToggleModule,
     MatToolbarModule
   ]
