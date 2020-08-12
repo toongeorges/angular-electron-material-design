@@ -125,6 +125,11 @@ $dark-theme: mat-dark-theme(
   max-width: calc(100vw - 16px) !important;
 }
 
+.transparent .mat-dialog-container {
+    box-shadow: none;
+    background: rgba(0, 0, 0, 0.0);
+}
+
 
 
 //theming below is for icons, see https://dev.materialdesignicons.com/getting-started/angular
