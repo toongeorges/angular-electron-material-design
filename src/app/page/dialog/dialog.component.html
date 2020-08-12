@@ -1,0 +1,12 @@
+<p>
+<mat-form-field>
+    <mat-label>What's your name?</mat-label>
+    <input matInput [(ngModel)]="name">
+</mat-form-field>
+</p>
+<p>
+<button mat-raised-button (click)="openDialog()">Pick your favorite animal</button>
+</p>
+<p *ngIf="animal">
+You chose: <i>{{animal}}</i>
+</p>

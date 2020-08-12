@@ -41,6 +41,8 @@ import { BottomSheetContentComponent } from './page/bottom-sheet/bottom-sheet-co
 import { CardComponent } from './page/card/card.component';
 import { ChipsComponent } from './page/chips/chips.component';
 import { DatepickerComponent } from './page/datepicker/datepicker.component';
+import { DialogComponent } from './page/dialog/dialog.component';
+import { DialogContentComponent } from './page/dialog/dialog-content/dialog-content.component';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
@@ -71,7 +73,9 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
     BottomSheetContentComponent,
     CardComponent,
     ChipsComponent,
-    DatepickerComponent
+    DatepickerComponent,
+    DialogComponent,
+    DialogContentComponent
   ],
   imports: [
     BrowserModule,

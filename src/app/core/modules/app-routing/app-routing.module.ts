@@ -21,6 +21,7 @@ import { BottomSheetComponent } from 'app/page/bottom-sheet/bottom-sheet.compone
 import { CardComponent } from 'app/page/card/card.component';
 import { ChipsComponent } from 'app/page/chips/chips.component';
 import { DatepickerComponent } from 'app/page/datepicker/datepicker.component';
+import { DialogComponent } from 'app/page/dialog/dialog.component';
 
 const routes: Routes = [
   { path: 'autocomplete', component: AutocompleteComponent },
@@ -32,6 +33,7 @@ const routes: Routes = [
   { path: 'checkbox', component: CheckboxComponent },
   { path: 'chips', component: ChipsComponent },
   { path: 'datepicker', component: DatepickerComponent },
+  { path: 'dialog', component: DialogComponent },
   { path: 'divider', component: DividerComponent },
   { path: 'form-field', component: FormFieldComponent },
   { path: 'icon', component: IconComponent },
