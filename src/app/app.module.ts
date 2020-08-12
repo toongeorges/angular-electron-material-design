@@ -53,6 +53,7 @@ import { ProgressSpinnerOverlayComponent } from './page/progress-spinner/progres
 import { RipplesComponent } from './page/ripples/ripples.component';
 import { SnackbarComponent } from './page/snackbar/snackbar.component';
 import { SnackbarContentComponent } from './page/snackbar/snackbar-content/snackbar-content.component';
+import { SortHeaderComponent } from './page/sort-header/sort-header.component';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
@@ -95,7 +96,8 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
     ProgressSpinnerOverlayComponent,
     RipplesComponent,
     SnackbarComponent,
-    SnackbarContentComponent
+    SnackbarContentComponent,
+    SortHeaderComponent
   ],
   imports: [
     BrowserModule,
