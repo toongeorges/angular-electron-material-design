@@ -29,6 +29,7 @@ import { ProgressBarComponent } from 'app/page/progress-bar/progress-bar.compone
 import { SliderComponent } from 'app/page/slider/slider.component';
 import { ProgressSpinnerComponent } from 'app/page/progress-spinner/progress-spinner.component';
 import { RipplesComponent } from 'app/page/ripples/ripples.component';
+import { SnackbarComponent } from 'app/page/snackbar/snackbar.component';
 
 const routes: Routes = [
   { path: 'autocomplete', component: AutocompleteComponent },
@@ -58,6 +59,7 @@ const routes: Routes = [
   { path: 'sidenav', component: SidenavComponent },
   { path: 'slide-toggle', component: SlideToggleComponent },
   { path: 'slider', component: SliderComponent },
+  { path: 'snackbar', component: SnackbarComponent },
   { path: 'toolbar', component: ToolbarComponent },
   { path: '**', component: WelcomeComponent }
 ];

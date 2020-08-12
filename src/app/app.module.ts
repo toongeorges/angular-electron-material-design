@@ -51,6 +51,8 @@ import { SliderComponent } from './page/slider/slider.component';
 import { ProgressSpinnerComponent } from './page/progress-spinner/progress-spinner.component';
 import { ProgressSpinnerOverlayComponent } from './page/progress-spinner/progress-spinner-overlay/progress-spinner-overlay.component';
 import { RipplesComponent } from './page/ripples/ripples.component';
+import { SnackbarComponent } from './page/snackbar/snackbar.component';
+import { SnackbarContentComponent } from './page/snackbar/snackbar-content/snackbar-content.component';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
@@ -91,7 +93,9 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
     SliderComponent,
     ProgressSpinnerComponent,
     ProgressSpinnerOverlayComponent,
-    RipplesComponent
+    RipplesComponent,
+    SnackbarComponent,
+    SnackbarContentComponent
   ],
   imports: [
     BrowserModule,

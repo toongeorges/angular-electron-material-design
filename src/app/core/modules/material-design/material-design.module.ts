@@ -30,6 +30,7 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatSliderModule } from '@angular/material/slider';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatToolbarModule } from '@angular/material/toolbar';
 
 import { MatMomentDateModule } from "@angular/material-moment-adapter"; //for MatDatepickerModule
@@ -67,6 +68,7 @@ import { MatMomentDateModule } from "@angular/material-moment-adapter"; //for Ma
     MatSidenavModule,
     MatSlideToggleModule,
     MatSliderModule,
+    MatSnackBarModule,
     MatToolbarModule
   ], exports: [
     OverlayModule,
@@ -98,6 +100,7 @@ import { MatMomentDateModule } from "@angular/material-moment-adapter"; //for Ma
     MatSidenavModule,
     MatSlideToggleModule,
     MatSliderModule,
+    MatSnackBarModule,
     MatToolbarModule
   ]
 })
