@@ -45,6 +45,7 @@ import { DialogComponent } from './page/dialog/dialog.component';
 import { DialogContentComponent } from './page/dialog/dialog-content/dialog-content.component';
 import { ExpansionPanelComponent } from './page/expansion-panel/expansion-panel.component';
 import { GridListComponent } from './page/grid-list/grid-list.component';
+import { PaginatorComponent } from './page/paginator/paginator.component';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
@@ -79,7 +80,8 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
     DialogComponent,
     DialogContentComponent,
     ExpansionPanelComponent,
-    GridListComponent
+    GridListComponent,
+    PaginatorComponent
   ],
   imports: [
     BrowserModule,

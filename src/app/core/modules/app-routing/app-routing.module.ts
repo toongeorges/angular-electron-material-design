@@ -24,6 +24,7 @@ import { DatepickerComponent } from 'app/page/datepicker/datepicker.component';
 import { DialogComponent } from 'app/page/dialog/dialog.component';
 import { ExpansionPanelComponent } from 'app/page/expansion-panel/expansion-panel.component';
 import { GridListComponent } from 'app/page/grid-list/grid-list.component';
+import { PaginatorComponent } from 'app/page/paginator/paginator.component';
 
 const routes: Routes = [
   { path: 'autocomplete', component: AutocompleteComponent },
@@ -44,6 +45,7 @@ const routes: Routes = [
   { path: 'input', component: InputComponent },
   { path: 'list', component: ListComponent },
   { path: 'menu', component: MenuComponent },
+  { path: 'paginator', component: PaginatorComponent },
   { path: 'radio-button', component: RadioButtonComponent },
   { path: 'select', component: SelectComponent },
   { path: 'sidenav', component: SidenavComponent },
