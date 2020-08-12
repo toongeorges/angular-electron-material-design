@@ -23,6 +23,7 @@ import { ChipsComponent } from 'app/page/chips/chips.component';
 import { DatepickerComponent } from 'app/page/datepicker/datepicker.component';
 import { DialogComponent } from 'app/page/dialog/dialog.component';
 import { ExpansionPanelComponent } from 'app/page/expansion-panel/expansion-panel.component';
+import { GridListComponent } from 'app/page/grid-list/grid-list.component';
 
 const routes: Routes = [
   { path: 'autocomplete', component: AutocompleteComponent },
@@ -38,6 +39,7 @@ const routes: Routes = [
   { path: 'divider', component: DividerComponent },
   { path: 'expansion-panel', component: ExpansionPanelComponent },
   { path: 'form-field', component: FormFieldComponent },
+  { path: 'grid-list', component: GridListComponent },
   { path: 'icon', component: IconComponent },
   { path: 'input', component: InputComponent },
   { path: 'list', component: ListComponent },

@@ -44,6 +44,7 @@ import { DatepickerComponent } from './page/datepicker/datepicker.component';
 import { DialogComponent } from './page/dialog/dialog.component';
 import { DialogContentComponent } from './page/dialog/dialog-content/dialog-content.component';
 import { ExpansionPanelComponent } from './page/expansion-panel/expansion-panel.component';
+import { GridListComponent } from './page/grid-list/grid-list.component';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
@@ -77,7 +78,8 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
     DatepickerComponent,
     DialogComponent,
     DialogContentComponent,
-    ExpansionPanelComponent
+    ExpansionPanelComponent,
+    GridListComponent
   ],
   imports: [
     BrowserModule,
