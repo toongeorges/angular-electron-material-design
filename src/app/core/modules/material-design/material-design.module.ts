@@ -25,6 +25,7 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatRadioModule } from '@angular/material/radio';
+import { MatRippleModule } from '@angular/material/core';
 import { MatSelectModule } from '@angular/material/select';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
@@ -61,6 +62,7 @@ import { MatMomentDateModule } from "@angular/material-moment-adapter"; //for Ma
     MatProgressBarModule,
     MatProgressSpinnerModule,
     MatRadioModule,
+    MatRippleModule,
     MatSelectModule,
     MatSidenavModule,
     MatSlideToggleModule,
@@ -91,6 +93,7 @@ import { MatMomentDateModule } from "@angular/material-moment-adapter"; //for Ma
     MatProgressBarModule,
     MatProgressSpinnerModule,
     MatRadioModule,
+    MatRippleModule,
     MatSelectModule,
     MatSidenavModule,
     MatSlideToggleModule,

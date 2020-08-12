@@ -28,6 +28,7 @@ import { PaginatorComponent } from 'app/page/paginator/paginator.component';
 import { ProgressBarComponent } from 'app/page/progress-bar/progress-bar.component';
 import { SliderComponent } from 'app/page/slider/slider.component';
 import { ProgressSpinnerComponent } from 'app/page/progress-spinner/progress-spinner.component';
+import { RipplesComponent } from 'app/page/ripples/ripples.component';
 
 const routes: Routes = [
   { path: 'autocomplete', component: AutocompleteComponent },
@@ -52,6 +53,7 @@ const routes: Routes = [
   { path: 'progress-bar', component: ProgressBarComponent },
   { path: 'progress-spinner', component: ProgressSpinnerComponent },
   { path: 'radio-button', component: RadioButtonComponent },
+  { path: 'ripples', component: RipplesComponent },
   { path: 'select', component: SelectComponent },
   { path: 'sidenav', component: SidenavComponent },
   { path: 'slide-toggle', component: SlideToggleComponent },
