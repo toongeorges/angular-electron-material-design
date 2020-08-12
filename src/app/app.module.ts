@@ -47,6 +47,7 @@ import { ExpansionPanelComponent } from './page/expansion-panel/expansion-panel.
 import { GridListComponent } from './page/grid-list/grid-list.component';
 import { PaginatorComponent } from './page/paginator/paginator.component';
 import { ProgressBarComponent } from './page/progress-bar/progress-bar.component';
+import { SliderComponent } from './page/slider/slider.component';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
@@ -83,7 +84,8 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
     ExpansionPanelComponent,
     GridListComponent,
     PaginatorComponent,
-    ProgressBarComponent
+    ProgressBarComponent,
+    SliderComponent
   ],
   imports: [
     BrowserModule,

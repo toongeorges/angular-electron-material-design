@@ -26,8 +26,8 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatSelectModule } from '@angular/material/select';
 import { MatSidenavModule } from '@angular/material/sidenav';
-import { MatSliderModule } from '@angular/material/slider';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { MatSliderModule } from '@angular/material/slider';
 import { MatToolbarModule } from '@angular/material/toolbar';
 
 import { MatMomentDateModule } from "@angular/material-moment-adapter"; //for MatDatepickerModule
@@ -61,8 +61,8 @@ import { MatMomentDateModule } from "@angular/material-moment-adapter"; //for Ma
     MatRadioModule,
     MatSelectModule,
     MatSidenavModule,
-    MatSliderModule,
     MatSlideToggleModule,
+    MatSliderModule,
     MatToolbarModule
   ], exports: [
     OverlayModule,
@@ -90,8 +90,8 @@ import { MatMomentDateModule } from "@angular/material-moment-adapter"; //for Ma
     MatRadioModule,
     MatSelectModule,
     MatSidenavModule,
-    MatSliderModule,
     MatSlideToggleModule,
+    MatSliderModule,
     MatToolbarModule
   ]
 })
