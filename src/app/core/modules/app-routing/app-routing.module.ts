@@ -31,6 +31,7 @@ import { ProgressSpinnerComponent } from 'app/page/progress-spinner/progress-spi
 import { RipplesComponent } from 'app/page/ripples/ripples.component';
 import { SnackbarComponent } from 'app/page/snackbar/snackbar.component';
 import { SortHeaderComponent } from 'app/page/sort-header/sort-header.component';
+import { StepperComponent } from 'app/page/stepper/stepper.component';
 
 const routes: Routes = [
   { path: 'autocomplete', component: AutocompleteComponent },
@@ -62,6 +63,7 @@ const routes: Routes = [
   { path: 'slider', component: SliderComponent },
   { path: 'snackbar', component: SnackbarComponent },
   { path: 'sort-header', component: SortHeaderComponent },
+  { path: 'stepper', component: StepperComponent },
   { path: 'toolbar', component: ToolbarComponent },
   { path: '**', component: WelcomeComponent }
 ];

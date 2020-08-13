@@ -20,7 +20,6 @@
     </mat-menu>
 </mat-toolbar>
 <mat-sidenav-container>
-    <!-- body has a margin of 8px and toolbar has a height of 64px, 8 + 64 = 72  -->
     <mat-sidenav #drawer mode="side" opened="true">
         <mat-button-toggle-group name="menu" vertical="true" aria-label="Menu">
             <mat-button-toggle routerLink="home"><mat-icon svgIcon="home"></mat-icon></mat-button-toggle>
@@ -53,6 +52,7 @@
             <mat-button-toggle routerLink="slider">Slider</mat-button-toggle>
             <mat-button-toggle routerLink="snackbar">Snackbar</mat-button-toggle>
             <mat-button-toggle routerLink="sort-header">Sort Header</mat-button-toggle>
+            <mat-button-toggle routerLink="stepper">Stepper</mat-button-toggle>
             <mat-button-toggle routerLink="toolbar">Toolbar</mat-button-toggle>
         </mat-button-toggle-group>
     </mat-sidenav>
