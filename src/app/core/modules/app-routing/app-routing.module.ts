@@ -34,6 +34,7 @@ import { SortHeaderComponent } from 'app/page/sort-header/sort-header.component'
 import { StepperComponent } from 'app/page/stepper/stepper.component';
 import { TableComponent } from 'app/page/table/table.component';
 import { TabsComponent } from 'app/page/tabs/tabs.component';
+import { TooltipComponent } from 'app/page/tooltip/tooltip.component';
 
 const routes: Routes = [
   { path: 'autocomplete', component: AutocompleteComponent },
@@ -69,6 +70,7 @@ const routes: Routes = [
   { path: 'table', component: TableComponent },
   { path: 'tabs', component: TabsComponent },
   { path: 'toolbar', component: ToolbarComponent },
+  { path: 'tooltip', component: TooltipComponent },
   { path: '**', component: WelcomeComponent }
 ];
 
