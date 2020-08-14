@@ -33,6 +33,7 @@ import { MatSliderModule } from '@angular/material/slider';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatSortModule } from '@angular/material/sort';
 import { MatStepperModule } from '@angular/material/stepper';
+import { MatTableModule } from '@angular/material/table';
 import { MatToolbarModule } from '@angular/material/toolbar';
 
 import { MatMomentDateModule } from "@angular/material-moment-adapter"; //for MatDatepickerModule
@@ -73,6 +74,7 @@ import { MatMomentDateModule } from "@angular/material-moment-adapter"; //for Ma
     MatSnackBarModule,
     MatSortModule,
     MatStepperModule,
+    MatTableModule,
     MatToolbarModule
   ], exports: [
     OverlayModule,
@@ -107,6 +109,7 @@ import { MatMomentDateModule } from "@angular/material-moment-adapter"; //for Ma
     MatSnackBarModule,
     MatSortModule,
     MatStepperModule,
+    MatTableModule,
     MatToolbarModule
   ]
 })

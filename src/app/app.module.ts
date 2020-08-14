@@ -55,6 +55,7 @@ import { SnackbarComponent } from './page/snackbar/snackbar.component';
 import { SnackbarContentComponent } from './page/snackbar/snackbar-content/snackbar-content.component';
 import { SortHeaderComponent } from './page/sort-header/sort-header.component';
 import { StepperComponent } from './page/stepper/stepper.component';
+import { TableComponent } from './page/table/table.component';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
@@ -99,7 +100,8 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
     SnackbarComponent,
     SnackbarContentComponent,
     SortHeaderComponent,
-    StepperComponent
+    StepperComponent,
+    TableComponent
   ],
   imports: [
     BrowserModule,
