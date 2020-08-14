@@ -49,4 +49,13 @@ export class StepperComponent implements OnInit {
     });
   }
 
+  toggleOptional() {
+    this.optional = !this.optional;
+    this.thirdHFormGroup = this._formBuilder.group({
+      thirdHCtrl: ''
+    });
+    this.thirdVFormGroup = this._formBuilder.group({
+      thirdVCtrl: ''
+    });
+  }
 }

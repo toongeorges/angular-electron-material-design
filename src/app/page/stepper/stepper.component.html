@@ -4,7 +4,7 @@
 <button mat-raised-button (click)="editable = !editable">
   {{!editable ? 'Enable edit mode' : 'Disable edit mode'}}
 </button>
-<button mat-raised-button (click)="optional = !optional">
+<button mat-raised-button (click)="toggleOptional()">
   {{!optional ? 'Enable optional mode' : 'Disable optional mode'}}
 </button>
 <button mat-raised-button (click)="vertical = !vertical">
@@ -66,7 +66,6 @@
       <button mat-button (click)="stepper.reset()">Reset</button>
     </div>
   </mat-step>
-  <!-- Icon overrides.  At the moment of writing, it appears custom states did not work. -->
   <ng-template matStepperIcon="edit"> <!-- this is a fix -->
     <mat-icon svgIcon="pencil"></mat-icon>
   </ng-template>
@@ -112,7 +111,6 @@
       <ng-template matStepLabel>Fill out your address</ng-template>
       <mat-form-field>
         <mat-label>Address</mat-label>
-        <!-- even though required is bound to !optional, error messages may be displayed incorrectly -->
         <input matInput formControlName="thirdVCtrl" placeholder="Ex. 1 Main St, New York, NY" [required]="!optional">
       </mat-form-field>
       <div>
