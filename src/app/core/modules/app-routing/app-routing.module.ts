@@ -33,6 +33,7 @@ import { SnackbarComponent } from 'app/page/snackbar/snackbar.component';
 import { SortHeaderComponent } from 'app/page/sort-header/sort-header.component';
 import { StepperComponent } from 'app/page/stepper/stepper.component';
 import { TableComponent } from 'app/page/table/table.component';
+import { TabsComponent } from 'app/page/tabs/tabs.component';
 
 const routes: Routes = [
   { path: 'autocomplete', component: AutocompleteComponent },
@@ -66,6 +67,7 @@ const routes: Routes = [
   { path: 'sort-header', component: SortHeaderComponent },
   { path: 'stepper', component: StepperComponent },
   { path: 'table', component: TableComponent },
+  { path: 'tabs', component: TabsComponent },
   { path: 'toolbar', component: ToolbarComponent },
   { path: '**', component: WelcomeComponent }
 ];
