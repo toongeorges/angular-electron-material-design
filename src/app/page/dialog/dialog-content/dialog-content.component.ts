@@ -10,7 +10,7 @@ import { DialogData } from '../dialog.component';
 export class DialogContentComponent implements OnInit {
 
   constructor(
-    @Inject(MAT_DIALOG_DATA) private data: DialogData,
+    @Inject(MAT_DIALOG_DATA) public data: DialogData,
     private dialogRef: MatDialogRef<DialogContentComponent>
   ) {}
 

@@ -18,6 +18,7 @@
   *ngIf="!vertical"
   [linear]="linear"
   [labelPosition]="labelPositionBottom ? 'bottom' : 'end'"
+   #hstepper
 >
   <mat-step [stepControl]="firstHFormGroup" [editable]="editable" errorMessage="Name is required.">
     <form [formGroup]="firstHFormGroup">
@@ -63,7 +64,7 @@
     <p>You are now done.</p>
     <div>
       <button mat-button matStepperPrevious>Back</button>
-      <button mat-button (click)="stepper.reset()">Reset</button>
+      <button mat-button (click)="hstepper.reset()">Reset</button>
     </div>
   </mat-step>
   <ng-template matStepperIcon="edit"> <!-- this is a fix -->
@@ -80,6 +81,7 @@
 <mat-vertical-stepper
   *ngIf="vertical"
   [linear]="linear"
+   #vstepper
 >
   <mat-step [stepControl]="firstVFormGroup" [editable]="editable" errorMessage="Name is required.">
     <form [formGroup]="firstVFormGroup">
@@ -124,7 +126,7 @@
     <p>You are now done.</p>
     <div>
       <button mat-button matStepperPrevious>Back</button>
-      <button mat-button (click)="stepper.reset()">Reset</button>
+      <button mat-button (click)="vstepper.reset()">Reset</button>
     </div>
   </mat-step>
   <!-- Icon overrides.  At the moment of writing, it appears custom states did not work. -->

@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./form-field.component.scss']
 })
 export class FormFieldComponent implements OnInit {
+  hide: boolean = true;
 
   constructor() { }
 
