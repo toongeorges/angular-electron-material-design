@@ -58,6 +58,7 @@ import { StepperComponent } from './page/stepper/stepper.component';
 import { TableComponent } from './page/table/table.component';
 import { TabsComponent } from './page/tabs/tabs.component';
 import { TooltipComponent } from './page/tooltip/tooltip.component';
+import { TreeComponent } from './page/tree/tree.component';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
@@ -105,7 +106,8 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
     StepperComponent,
     TableComponent,
     TabsComponent,
-    TooltipComponent
+    TooltipComponent,
+    TreeComponent
   ],
   imports: [
     BrowserModule,
