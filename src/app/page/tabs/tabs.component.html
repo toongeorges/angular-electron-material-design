@@ -1,0 +1,28 @@
+<label id="example-radio-group-label">Color:</label>
+<mat-radio-group
+  aria-labelledby="example-radio-group-label"
+  class="example-radio-group"
+  [(ngModel)]="color">
+  <mat-radio-button class="example-radio-button">none</mat-radio-button>
+  <mat-radio-button class="example-radio-button" value="primary">primary</mat-radio-button>
+  <mat-radio-button class="example-radio-button" value="accent">accent</mat-radio-button>
+  <mat-radio-button class="example-radio-button" value="warn">warn</mat-radio-button>
+</mat-radio-group>
+
+<label id="example-radio-group-label">Backgound Color:</label>
+<mat-radio-group
+  aria-labelledby="example-radio-group-label"
+  class="example-radio-group"
+  [(ngModel)]="backgroundColor">
+  <mat-radio-button class="example-radio-button">none</mat-radio-button>
+  <mat-radio-button class="example-radio-button" value="primary">primary</mat-radio-button>
+  <mat-radio-button class="example-radio-button" value="accent">accent</mat-radio-button>
+  <mat-radio-button class="example-radio-button" value="warn">warn</mat-radio-button>
+</mat-radio-group>
+
+<mat-tab-group [color]="color" [backgroundColor]="backgroundColor">
+  <mat-tab label="First"> Content 1 </mat-tab>
+  <mat-tab label="Second"> Content 2 </mat-tab>
+  <mat-tab label="Third"> Content 3 </mat-tab>
+  <mat-tab label="Disabled" disabled> Disabled </mat-tab>
+</mat-tab-group>

@@ -1,0 +1,20 @@
+<mat-checkbox [(ngModel)]="centered" class="example-ripple-checkbox">Centered</mat-checkbox>
+<mat-checkbox [(ngModel)]="disabled" class="example-ripple-checkbox">Disabled</mat-checkbox>
+<mat-checkbox [(ngModel)]="unbounded" class="example-ripple-checkbox">Unbounded</mat-checkbox>
+<br>
+<label>Radius: </label>
+<mat-slider min="1" max="300" [(ngModel)]="radius"></mat-slider> {{ radius }} {{ (this.radius == 1) ? "pixel" : "pixels" }}
+<br>
+<mat-form-field class="example-ripple-form-field">
+  <input matInput [(ngModel)]="color" type="color" placeholder="Color">
+</mat-form-field>
+
+<div class="example-ripple-container mat-elevation-z4"
+     matRipple
+     [matRippleCentered]="centered"
+     [matRippleDisabled]="disabled"
+     [matRippleUnbounded]="unbounded"
+     [matRippleRadius]="radius"
+     [matRippleColor]="color">
+  Click me
+</div>

@@ -1,1 +1,66 @@
-<router-outlet></router-outlet>
+<mat-toolbar color="primary">
+    <button mat-icon-button aria-label="Toggle menu" (click)="drawer.toggle()">
+        <mat-icon svgIcon="menu"></mat-icon>
+    </button>
+    <span class="spacer"></span>
+    Material Design Components
+    <span class="spacer"></span>
+    <button mat-raised-button color="accent" mat-button [matMenuTriggerFor]="menu" aria-label="Select Theme">
+        Select Theme
+    </button>
+    <mat-menu #menu="matMenu">
+        <button mat-menu-item (click)="onSetTheme('dark-theme')">
+            <mat-icon svgIcon="brightness-2"></mat-icon>
+            <span>Dark Theme</span>
+        </button>
+        <button mat-menu-item (click)="onSetTheme('light-theme')">
+            <mat-icon svgIcon="brightness-7"></mat-icon>
+            <span>Light Theme</span>
+        </button>
+    </mat-menu>
+</mat-toolbar>
+<mat-sidenav-container>
+    <mat-sidenav #drawer mode="side" opened="true">
+        <mat-button-toggle-group name="menu" vertical="true" aria-label="Menu">
+            <mat-button-toggle routerLink="home"><mat-icon svgIcon="home"></mat-icon></mat-button-toggle>
+            <mat-button-toggle routerLink="autocomplete">Autocomplete</mat-button-toggle>
+            <mat-button-toggle routerLink="badge">Badge</mat-button-toggle>
+            <mat-button-toggle routerLink="bottom-sheet">Bottom Sheet</mat-button-toggle>
+            <mat-button-toggle routerLink="button">Button</mat-button-toggle>
+            <mat-button-toggle routerLink="button-toggle">Button Toggle</mat-button-toggle>
+            <mat-button-toggle routerLink="card">Card</mat-button-toggle>
+            <mat-button-toggle routerLink="checkbox">Checkbox</mat-button-toggle>
+            <mat-button-toggle routerLink="chips">Chips</mat-button-toggle>
+            <mat-button-toggle routerLink="datepicker">Datepicker</mat-button-toggle>
+            <mat-button-toggle routerLink="dialog">Dialog</mat-button-toggle>
+            <mat-button-toggle routerLink="divider">Divider</mat-button-toggle>
+            <mat-button-toggle routerLink="expansion-panel">Expansion Panel</mat-button-toggle>
+            <mat-button-toggle routerLink="form-field">Form Field</mat-button-toggle>
+            <mat-button-toggle routerLink="grid-list">Grid List</mat-button-toggle>
+            <mat-button-toggle routerLink="icon">Icon</mat-button-toggle>
+            <mat-button-toggle routerLink="input">Input</mat-button-toggle>
+            <mat-button-toggle routerLink="list">List</mat-button-toggle>
+            <mat-button-toggle routerLink="menu">Menu</mat-button-toggle>
+            <mat-button-toggle routerLink="paginator">Paginator</mat-button-toggle>
+            <mat-button-toggle routerLink="progress-bar">Progress Bar</mat-button-toggle>
+            <mat-button-toggle routerLink="progress-spinner">Progress Spinner</mat-button-toggle>
+            <mat-button-toggle routerLink="radio-button">Radio Button</mat-button-toggle>
+            <mat-button-toggle routerLink="ripples">Ripples</mat-button-toggle>
+            <mat-button-toggle routerLink="select">Select</mat-button-toggle>
+            <mat-button-toggle routerLink="sidenav">Sidenav</mat-button-toggle>
+            <mat-button-toggle routerLink="slide-toggle">Slide Toggle</mat-button-toggle>
+            <mat-button-toggle routerLink="slider">Slider</mat-button-toggle>
+            <mat-button-toggle routerLink="snackbar">Snackbar</mat-button-toggle>
+            <mat-button-toggle routerLink="sort-header">Sort Header</mat-button-toggle>
+            <mat-button-toggle routerLink="stepper">Stepper</mat-button-toggle>
+            <mat-button-toggle routerLink="table">Table</mat-button-toggle>
+            <mat-button-toggle routerLink="tabs">Tabs</mat-button-toggle>
+            <mat-button-toggle routerLink="toolbar">Toolbar</mat-button-toggle>
+            <mat-button-toggle routerLink="tooltip">Tooltip</mat-button-toggle>
+            <mat-button-toggle routerLink="tree">Tree</mat-button-toggle>
+        </mat-button-toggle-group>
+    </mat-sidenav>
+    <mat-sidenav-content class="mat-body content">
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+</mat-sidenav-container>

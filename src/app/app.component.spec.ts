@@ -2,14 +2,27 @@ import { TestBed, async } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
 import { TranslateModule } from '@ngx-translate/core';
-import { ElectronService } from './core/services';
+import { MaterialDesignModule } from './core/modules/material-design/material-design.module';
+import { ElectronService } from './core/services/electron/electron.service';
+import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [AppComponent],
       providers: [ElectronService],
-      imports: [RouterTestingModule, TranslateModule.forRoot()]
+      imports: [
+        BrowserModule,
+        BrowserAnimationsModule,
+        ReactiveFormsModule,
+        HttpClientModule,
+        MaterialDesignModule,
+        RouterTestingModule,
+        TranslateModule.forRoot()
+      ]
     }).compileComponents();
   }));
 

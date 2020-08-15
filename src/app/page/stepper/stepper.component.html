@@ -1,0 +1,142 @@
+<button mat-raised-button (click)="linear = !linear">
+  {{!linear ? 'Enable linear mode' : 'Disable linear mode'}}
+</button>
+<button mat-raised-button (click)="editable = !editable">
+  {{!editable ? 'Enable edit mode' : 'Disable edit mode'}}
+</button>
+<button mat-raised-button (click)="toggleOptional()">
+  {{!optional ? 'Enable optional mode' : 'Disable optional mode'}}
+</button>
+<button mat-raised-button (click)="vertical = !vertical">
+  {{!vertical ? 'Enable vertical mode' : 'Enable horizontal mode'}}
+</button>
+<button *ngIf="!vertical" mat-raised-button (click)="labelPositionBottom = !labelPositionBottom">
+  {{!labelPositionBottom ? 'Put label at bottom' : 'Put label at end'}}
+</button>
+
+<mat-horizontal-stepper
+  *ngIf="!vertical"
+  [linear]="linear"
+  [labelPosition]="labelPositionBottom ? 'bottom' : 'end'"
+   #hstepper
+>
+  <mat-step [stepControl]="firstHFormGroup" [editable]="editable" errorMessage="Name is required.">
+    <form [formGroup]="firstHFormGroup">
+      <ng-template matStepLabel>Fill out your name</ng-template>
+      <mat-form-field>
+        <mat-label>Name</mat-label>
+        <input matInput formControlName="firstHCtrl" placeholder="Last name, First name" required>
+      </mat-form-field>
+      <div>
+        <button mat-button matStepperNext>Next</button>
+      </div>
+    </form>
+  </mat-step>
+  <mat-step [stepControl]="secondHFormGroup" [editable]="editable" errorMessage="Email address is required.">
+    <form [formGroup]="secondHFormGroup">
+      <ng-template matStepLabel>Fill out your email address</ng-template>
+      <mat-form-field>
+        <mat-label>Email Address</mat-label>
+        <input matInput formControlName="secondHCtrl" placeholder="Ex. a@b.com" required>
+      </mat-form-field>
+      <div>
+        <button mat-button matStepperPrevious>Back</button>
+        <button mat-button matStepperNext>Next</button>
+      </div>
+    </form>
+  </mat-step>
+  <mat-step [stepControl]="thirdHFormGroup" [editable]="editable" [optional]="optional" errorMessage="Address is required.">
+    <form [formGroup]="thirdHFormGroup">
+      <ng-template matStepLabel>Fill out your address</ng-template>
+      <mat-form-field>
+        <mat-label>Address</mat-label>
+        <!-- even though required is bound to !optional, error messages may be displayed incorrectly -->
+        <input matInput formControlName="thirdHCtrl" placeholder="Ex. 1 Main St, New York, NY" [required]="!optional">
+      </mat-form-field>
+      <div>
+        <button mat-button matStepperPrevious>Back</button>
+        <button mat-button matStepperNext>Next</button>
+      </div>
+    </form>
+  </mat-step>
+  <mat-step>
+    <ng-template matStepLabel>Done</ng-template>
+    <p>You are now done.</p>
+    <div>
+      <button mat-button matStepperPrevious>Back</button>
+      <button mat-button (click)="hstepper.reset()">Reset</button>
+    </div>
+  </mat-step>
+  <ng-template matStepperIcon="edit"> <!-- this is a fix -->
+    <mat-icon svgIcon="pencil"></mat-icon>
+  </ng-template>
+  <ng-template matStepperIcon="done"> <!-- this is a fix -->
+    <mat-icon svgIcon="check"></mat-icon>
+  </ng-template>
+  <ng-template matStepperIcon="error"> <!-- this is a fix -->
+    <mat-icon svgIcon="alert"></mat-icon>
+  </ng-template>
+</mat-horizontal-stepper>
+
+<mat-vertical-stepper
+  *ngIf="vertical"
+  [linear]="linear"
+   #vstepper
+>
+  <mat-step [stepControl]="firstVFormGroup" [editable]="editable" errorMessage="Name is required.">
+    <form [formGroup]="firstVFormGroup">
+      <ng-template matStepLabel>Fill out your name</ng-template>
+      <mat-form-field>
+        <mat-label>Name</mat-label>
+        <input matInput formControlName="firstVCtrl" placeholder="Last name, First name" required>
+      </mat-form-field>
+      <div>
+        <button mat-button matStepperNext>Next</button>
+      </div>
+    </form>
+  </mat-step>
+  <mat-step [stepControl]="secondVFormGroup" [editable]="editable" errorMessage="Email address is required.">
+    <form [formGroup]="secondVFormGroup">
+      <ng-template matStepLabel>Fill out your email address</ng-template>
+      <mat-form-field>
+        <mat-label>Email Address</mat-label>
+        <input matInput formControlName="secondVCtrl" placeholder="Ex. a@b.com" required>
+      </mat-form-field>
+      <div>
+        <button mat-button matStepperPrevious>Back</button>
+        <button mat-button matStepperNext>Next</button>
+      </div>
+    </form>
+  </mat-step>
+  <mat-step [stepControl]="thirdVFormGroup" [editable]="editable" [optional]="optional" errorMessage="Address is required.">
+    <form [formGroup]="thirdVFormGroup">
+      <ng-template matStepLabel>Fill out your address</ng-template>
+      <mat-form-field>
+        <mat-label>Address</mat-label>
+        <input matInput formControlName="thirdVCtrl" placeholder="Ex. 1 Main St, New York, NY" [required]="!optional">
+      </mat-form-field>
+      <div>
+        <button mat-button matStepperPrevious>Back</button>
+        <button mat-button matStepperNext>Next</button>
+      </div>
+    </form>
+  </mat-step>
+  <mat-step>
+    <ng-template matStepLabel>Done</ng-template>
+    <p>You are now done.</p>
+    <div>
+      <button mat-button matStepperPrevious>Back</button>
+      <button mat-button (click)="vstepper.reset()">Reset</button>
+    </div>
+  </mat-step>
+  <!-- Icon overrides.  At the moment of writing, it appears custom states did not work. -->
+  <ng-template matStepperIcon="edit"> <!-- this is a fix -->
+    <mat-icon svgIcon="pencil"></mat-icon>
+  </ng-template>
+  <ng-template matStepperIcon="done"> <!-- this is a fix -->
+    <mat-icon svgIcon="check"></mat-icon>
+  </ng-template>
+  <ng-template matStepperIcon="error"> <!-- this is a fix -->
+    <mat-icon svgIcon="alert"></mat-icon>
+  </ng-template>
+</mat-vertical-stepper>

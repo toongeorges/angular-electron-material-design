@@ -1,17 +1,21 @@
-import { Component } from '@angular/core';
-import { ElectronService } from './core/services';
+import { Component, OnInit } from '@angular/core';
+import { ElectronService } from './core/services/electron/electron.service';
 import { TranslateService } from '@ngx-translate/core';
 import { AppConfig } from '../environments/environment';
+import { OverlayContainer } from '@angular/cdk/overlay';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
+  componentCssClass: string;
+
   constructor(
     private electronService: ElectronService,
-    private translate: TranslateService
+    private translate: TranslateService,
+    private overlayContainer: OverlayContainer
   ) {
     this.translate.setDefaultLang('en');
     console.log('AppConfig', AppConfig);
@@ -24,5 +28,38 @@ export class AppComponent {
     } else {
       console.log('Run in browser');
     }
+  }
+
+  ngOnInit(): void {
+    this.onSetTheme('dark-theme');
+  }
+
+  onSetTheme(theme: string) {
+    if (theme === this.componentCssClass) {
+      //ignore change
+    } else {
+      if (theme == 'dark-theme') {
+        this.resetTheme(theme);
+      } else if (theme == 'light-theme') {
+        this.resetTheme(theme);
+      } else {
+        console.error("Unknown theme: " + theme);
+      }
+    }
+  }
+
+  resetTheme(theme: string) { //does not reset the style of the outer scrollbars on the body element though
+    const body = document.getElementsByTagName('body')[0];
+
+    if (this.componentCssClass) {
+      //remove the old style
+      body.classList.remove(this.componentCssClass);
+      this.overlayContainer.getContainerElement().classList.remove(this.componentCssClass);
+    }
+
+    this.componentCssClass = theme;
+    //set the new style
+    body.classList.add(this.componentCssClass);
+    this.overlayContainer.getContainerElement().classList.add(this.componentCssClass);
   }
 }

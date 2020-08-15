@@ -1,0 +1,46 @@
+<h3>Snackbar with a Custom Component</h3>
+
+<mat-label>Snack bar duration: </mat-label>
+<mat-slider min="0" max="10" step="1" tickInterval="1" [(ngModel)]="durationInSeconds"></mat-slider> {{ durationInSeconds }} s
+
+<button mat-stroked-button (click)="openCustomSnackBar()" aria-label="Show an example snack-bar">
+  Pizza party
+</button>
+
+<h3>Basic Snackbar</h3>
+
+<mat-form-field>
+  <mat-label>Message</mat-label>
+  <input matInput value="Disco party!" #message>
+</mat-form-field>
+
+<mat-form-field>
+  <mat-label>Action</mat-label>
+  <input matInput value="Dance" #action>
+</mat-form-field>
+
+<button mat-stroked-button (click)="openBasicSnackBar(message.value, action.value)">Show snack-bar</button>
+
+<h3>Snackbar with Configurable Position</h3>
+
+<mat-form-field>
+  <mat-label>Horizontal position</mat-label>
+  <mat-select [(value)]="horizontalPosition">
+    <mat-option value="start">Start</mat-option>
+    <mat-option value="center">Center</mat-option>
+    <mat-option value="end">End</mat-option>
+    <mat-option value="left">Left</mat-option>
+    <mat-option value="right">Right</mat-option>
+  </mat-select>
+</mat-form-field>
+<mat-form-field>
+  <mat-label>Vertical position</mat-label>
+  <mat-select [(value)]="verticalPosition">
+    <mat-option value="top">Top</mat-option>
+    <mat-option value="bottom">Bottom</mat-option>
+  </mat-select>
+</mat-form-field>
+
+<button mat-stroked-button (click)="openConfigurableSnackBar()" aria-label="Show an example snack-bar">
+  Pool party!
+</button>
