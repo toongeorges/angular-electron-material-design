@@ -28,7 +28,7 @@ $dark-theme: mat-dark-theme(
 );
 
 //default theme
-@include angular-material-theme($dark-theme);
+//@include angular-material-theme($dark-theme); //might cause conflicts when changing themes, therefore disabled
 
 //styles for the scrollbar -->
 /* width */
