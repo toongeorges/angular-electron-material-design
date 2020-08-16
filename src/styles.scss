@@ -126,8 +126,8 @@ $dark-theme: mat-dark-theme(
 }
 
 .transparent .mat-dialog-container {
-    box-shadow: none;
-    background: rgba(0, 0, 0, 0.0);
+    box-shadow: none !important; //prevent material design from overriding the transparent class, just in case
+    background: rgba(0, 0, 0, 0.0) !important; //prevent material design from overriding the transparent class, just in case
 }
 
 
