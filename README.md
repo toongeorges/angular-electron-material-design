@@ -58,7 +58,9 @@ release/angular-electron-8.0.3.AppImage --no-sandbox
 
 ## More Info
 
-- about Angular and Electron, check https://github.com/maximegris/angular-electron
+- about Angular, check https://angular.io/
+- about Electron, check https://www.electronjs.org/
+- about Angular and Electron integration, check https://github.com/maximegris/angular-electron
 - about Material Design, check
   - https://material.angular.io/
   - https://material.io/design
