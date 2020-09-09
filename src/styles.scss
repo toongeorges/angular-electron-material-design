@@ -1,6 +1,7 @@
 //adding multiple themes as explained at https://stackoverflow.com/questions/47441036/switch-themes-in-angular-material-5
 //colours taken from https://material.io/design/color/the-color-system.html
 @import '~@angular/material/theming';
+@import './custom-theme.scss';
 
 // always include only once per project
 @include mat-core();
@@ -75,6 +76,12 @@ $dark-theme: mat-dark-theme(
     @include angular-material-theme($dark-theme);
     @include scrollbar-color-theme(mat-color($dark-theme-accent, 400), mat-color($dark-theme-accent), mat-color($dark-theme-accent, 600));
     @include datepicker-style($dark-theme-accent);
+}
+
+.custom-theme {
+    @include angular-material-theme($custom-theme);
+    @include scrollbar-color-theme(mat-color($custom-accent, 400), mat-color($custom-accent), mat-color($custom-accent, 600));
+    @include datepicker-style($custom-accent);
 }
 
 

@@ -1,0 +1,155 @@
+@import '~@angular/material/theming';
+
+$custom-primary-colour: (
+    50 : #f6faf5,
+    100 : #e9f3e5,
+    200 : #dbebd4,
+    300 : #cce3c2,
+    400 : #c1ddb5,
+    500 : #b6d7a8,
+    600 : #afd3a0,
+    700 : #a6cd97,
+    800 : #9ec78d,
+    900 : #8ebe7d,
+    A100 : #ffffff,
+    A200 : #ffffff,
+    A400 : #e7ffde,
+    A700 : #d4ffc4,
+    contrast: (
+        50 : #330033,
+        100 : #330033,
+        200 : #330033,
+        300 : #330033,
+        400 : #330033,
+        500 : #330033,
+        600 : #330033,
+        700 : #330033,
+        800 : #330033,
+        900 : #330033,
+        A100 : #330033,
+        A200 : #330033,
+        A400 : #330033,
+        A700 : #330033,
+    )
+);
+
+$custom-primary: mat-palette($custom-primary-colour);
+
+$custom-accent-colour: (
+    50 : #e0f3f3,
+    100 : #b3e0e0,
+    200 : #80cccc,
+    300 : #4db8b8,
+    400 : #26a8a8,
+    500 : #009999,
+    600 : #009191,
+    700 : #008686,
+    800 : #007c7c,
+    900 : #006b6b,
+    A100 : #9affff,
+    A200 : #67ffff,
+    A400 : #34ffff,
+    A700 : #1affff,
+    contrast: (
+        50 : #330033,
+        100 : #330033,
+        200 : #330033,
+        300 : #330033,
+        400 : #330033,
+        500 : #ffaaff,
+        600 : #ffaaff,
+        700 : #ffaaff,
+        800 : #ffaaff,
+        900 : #ffaaff,
+        A100 : #330033,
+        A200 : #330033,
+        A400 : #330033,
+        A700 : #330033,
+    )
+);
+
+
+$custom-accent: mat-palette($custom-accent-colour);
+
+$custom-warn-colour: (
+    50 : #fbeded,
+    100 : #f6d1d1,
+    200 : #f0b3b3,
+    300 : #e99494,
+    400 : #e57d7d,
+    500 : #e06666,
+    600 : #dc5e5e,
+    700 : #d85353,
+    800 : #d34949,
+    900 : #cb3838,
+    A100 : #ffffff,
+    A200 : #ffe2e2,
+    A400 : #ffafaf,
+    A700 : #ff9696,
+    contrast: (
+        50 : #003300,
+        100 : #003300,
+        200 : #003300,
+        300 : #003300,
+        400 : #003300,
+        500 : #003300,
+        600 : #003300,
+        700 : #ccffcc,
+        800 : #ccffcc,
+        900 : #ccffcc,
+        A100 : #003300,
+        A200 : #003300,
+        A400 : #003300,
+        A700 : #003300,
+    )
+);
+
+$custom-warn: mat-palette($custom-warn-colour);
+
+$custom-background: (
+  status-bar: #003300,
+  app-bar:     #004400,
+  background: #002200,
+  hover:      rgba(lightgreen, 0.04),
+  card:       #005500,
+  dialog:     #005500,
+  disabled-button: rgba(lightgreen, 0.12),
+  raised-button: #005500,
+  focused-button: rgba(lightgreen, 0.12),
+  selected-button:  #004400,
+  selected-disabled-button:  #005500,
+  disabled-button-toggle: #003300,
+  unselected-chip: #006600,
+  disabled-list-option: #003300,
+);
+
+$custom-foreground: (
+  base:              lightgreen,
+  divider:           rgba(lightgreen, 0.12),
+  dividers:          rgba(lightgreen, 0.12),
+  disabled:          rgba(lightgreen, 0.5),
+  disabled-button:   rgba(lightgreen, 0.3),
+  disabled-text:     rgba(lightgreen, 0.5),
+  hint-text:         rgba(lightgreen, 0.5),
+  secondary-text:    rgba(lightgreen, 0.7),
+  icon:              lightgreen,
+  icons:             lightgreen,
+  text:              lightgreen,
+  slider-min:        lightgreen,
+  slider-off:        rgba(lightgreen, 0.3),
+  slider-off-active: rgba(lightgreen, 0.3),
+);
+
+
+@function mat-custom-theme() {
+  @return (
+    primary: $custom-primary,
+    accent: $custom-accent,
+    warn: $custom-warn,
+    is-dark: false,
+    foreground: $custom-foreground,
+    background: $custom-background
+  );
+}
+
+$custom-theme: mat-custom-theme();

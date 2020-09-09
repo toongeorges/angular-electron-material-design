@@ -38,9 +38,11 @@ export class AppComponent implements OnInit {
     if (theme === this.componentCssClass) {
       //ignore change
     } else {
-      if (theme == 'dark-theme') {
-        this.resetTheme(theme);
-      } else if (theme == 'light-theme') {
+      if (
+        (theme == 'dark-theme')
+     || (theme == 'light-theme')
+     || (theme == 'custom-theme')
+      ) {
         this.resetTheme(theme);
       } else {
         console.error("Unknown theme: " + theme);
