@@ -1,6 +1,7 @@
 //adding multiple themes as explained at https://stackoverflow.com/questions/47441036/switch-themes-in-angular-material-5
 //colours taken from https://material.io/design/color/the-color-system.html
 @import '~@angular/material/theming';
+@import './custom-theme.scss';
 
 // always include only once per project
 @include mat-core();
@@ -28,91 +29,60 @@ $dark-theme: mat-dark-theme(
 );
 
 //default theme
-@include angular-material-theme($dark-theme);
+//@include angular-material-theme($dark-theme); //might cause conflicts when changing themes, therefore disabled
 
-//styles for the scrollbar -->
-/* width */
-::-webkit-scrollbar {
-    width: 8px; //for vertical scrollbars
-    height: 8px; //for horizontal scrollbars
-}
+@mixin scrollbar-color-theme($track-colour, $handle-colour, $hover-colour) {
+    ::-webkit-scrollbar {
+        width: 8px; //for vertical scrollbars
+        height: 8px; //for horizontal scrollbars
+    }
 
-/* Track */
-::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 2px grey; //this appears not to be reset when the style is reset
-    border-radius: 4px;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background: grey; //this appears not to be reset when the style is reset
-    border-radius: 4px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background: darkgrey; //this appears not to be reset when the style is reset, darkgrey #A9A9A9 is lighter than grey #808080
-}
-//<-- styles for the scrollbar
-
-.light-theme {
-    @include angular-material-theme($light-theme);
-
-    //styles for the scrollbar -->
     /* Track */
     ::-webkit-scrollbar-track {
-        box-shadow: inset 0 0 2px mat-color($light-theme-accent, 600);
+        box-shadow: inset 0 0 2px $track-colour;
         border-radius: 4px;
     }
 
     /* Handle */
     ::-webkit-scrollbar-thumb {
-        background: mat-color($light-theme-accent);
+        background: $handle-colour;
         border-radius: 4px;
     }
 
     /* Handle on hover */
     ::-webkit-scrollbar-thumb:hover {
-        background: mat-color($light-theme-accent, 400);
+        background: $hover-colour;
     }
-    //<-- styles for the scrollbar
+}
 
-    //the datepicker styles do not work if placed in the component scss, it has to be placed here
+@mixin datepicker-style($accent-colour) {
+    //the datepicker styles appear not work if placed in the component scss, therefore it is placed here
     .example-custom-date-class {
-        background: mat-color($light-theme-accent);
+        background: mat-color($accent-colour);
         border-radius: 100%;
     }
+}
+
+//the scrollbar around the body element appears not to be reset when the style is reset, give it a neutral grey colour
+@include scrollbar-color-theme(grey, grey, darkgrey); //darkgrey #A9A9A9 is lighter than grey #808080
+
+.light-theme {
+    @include angular-material-theme($light-theme);
+    @include scrollbar-color-theme(mat-color($light-theme-accent, 400), mat-color($light-theme-accent), mat-color($light-theme-accent, 600));
+    @include datepicker-style($light-theme-accent);
 }
 
 .dark-theme {
     @include angular-material-theme($dark-theme);
-
-    //styles for the scrollbar -->
-    /* Track */
-    ::-webkit-scrollbar-track {
-        box-shadow: inset 0 0 2px mat-color($dark-theme-accent, 400);
-        border-radius: 4px;
-    }
-
-    /* Handle */
-    ::-webkit-scrollbar-thumb {
-        background: mat-color($dark-theme-accent);
-        border-radius: 4px;
-    }
-
-    /* Handle on hover */
-    ::-webkit-scrollbar-thumb:hover {
-        background: mat-color($dark-theme-accent, 600);
-    }
-    //<-- styles for the scrollbar
-
-    //the datepicker styles do not work if placed in the component scss, it has to be placed here
-    .example-custom-date-class {
-        background: mat-color($dark-theme-accent);
-        border-radius: 100%;
-    }
+    @include scrollbar-color-theme(mat-color($dark-theme-accent, 400), mat-color($dark-theme-accent), mat-color($dark-theme-accent, 600));
+    @include datepicker-style($dark-theme-accent);
 }
 
+.custom-theme {
+    @include angular-material-theme($custom-theme);
+    @include scrollbar-color-theme(mat-color($custom-accent, 400), mat-color($custom-accent), mat-color($custom-accent, 600));
+    @include datepicker-style($custom-accent);
+}
 
 
 .button-without-padding {
@@ -126,8 +96,8 @@ $dark-theme: mat-dark-theme(
 }
 
 .transparent .mat-dialog-container {
-    box-shadow: none;
-    background: rgba(0, 0, 0, 0.0);
+    box-shadow: none !important; //prevent material design from overriding the transparent class, just in case
+    background: rgba(0, 0, 0, 0.0) !important; //prevent material design from overriding the transparent class, just in case
 }
 
 

@@ -31,6 +31,13 @@ Install dependencies with npm :
 npm install
 ```
 
+Under Linux:
+
+``` bash
+sudo chown root node_modules/electron/dist/chrome-sandbox
+sudo chmod 4755 node_modules/electron/dist/chrome-sandbox
+```
+
 ## To Build for Development
 
 ``` bash
