@@ -141,15 +141,15 @@ $custom-foreground: (
 );
 
 
-@function mat-custom-theme() {
+@function custom-theme($primary, $accent, $warn, $foreground, $background) {
   @return (
-    primary: $custom-primary,
-    accent: $custom-accent,
-    warn: $custom-warn,
+    primary: $primary,
+    accent: $accent,
+    warn: $warn,
     is-dark: false,
-    foreground: $custom-foreground,
-    background: $custom-background
+    foreground: $foreground,
+    background: $background
   );
 }
 
-$custom-theme: mat-custom-theme();
+$custom-theme: custom-theme($custom-primary, $custom-accent, $custom-warn, $custom-foreground, $custom-background);
