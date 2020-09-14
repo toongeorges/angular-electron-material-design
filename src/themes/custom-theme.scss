@@ -1,4 +1,5 @@
 @import '~@angular/material/theming';
+@import 'custom-theme-function.scss';
 
 $custom-primary-colour: (
     50 : #f6faf5,
@@ -139,17 +140,5 @@ $custom-foreground: (
   slider-off:        rgba(lightgreen, 0.3),
   slider-off-active: rgba(lightgreen, 0.3),
 );
-
-
-@function custom-theme($primary, $accent, $warn, $foreground, $background) {
-  @return (
-    primary: $primary,
-    accent: $accent,
-    warn: $warn,
-    is-dark: false,
-    foreground: $foreground,
-    background: $background
-  );
-}
 
 $custom-theme: custom-theme($custom-primary, $custom-accent, $custom-warn, $custom-foreground, $custom-background);

@@ -1,0 +1,10 @@
+@function custom-theme($primary, $accent, $warn, $foreground, $background) {
+  @return (
+    primary: $primary,
+    accent: $accent,
+    warn: $warn,
+    is-dark: false,
+    foreground: $foreground,
+    background: $background
+  );
+}
