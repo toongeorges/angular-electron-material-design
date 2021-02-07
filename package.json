@@ -44,13 +44,13 @@
     "lint": "ng lint"
   },
   "dependencies": {
-    "@angular/animations": "10.2.2",
-    "@angular/cdk": "10.2.7",
-    "@angular/forms": "10.2.2",
-    "@angular/material": "10.2.7",
-    "@angular/material-moment-adapter": "10.2.7",
-    "@mdi/angular-material": "5.8.55",
-    "copyfiles": "2.4.0",
+    "@angular/animations": "11.1.2",
+    "@angular/cdk": "11.1.2",
+    "@angular/forms": "11.1.2",
+    "@angular/material": "11.1.2",
+    "@angular/material-moment-adapter": "11.1.2",
+    "@mdi/angular-material": "5.9.55",
+    "copyfiles": "2.4.1",
     "moment": "2.29.1"
   },
   "devDependencies": {
