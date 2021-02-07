@@ -1,4 +1,8 @@
 import { waitForAsync, ComponentFixture, TestBed } from '@angular/core/testing';
+import { FormsModule } from '@angular/forms';
+import { MaterialDesignModule } from '../../core/modules/material-design/material-design.module';
+import { MatIcon } from '@angular/material/icon';
+import { MatIconTestingModule } from '@angular/material/icon/testing';
 
 import { TreeComponent } from './tree.component';
 
@@ -8,7 +12,12 @@ describe('TreeComponent', () => {
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ TreeComponent ]
+      declarations: [ TreeComponent, MatIcon ],
+      imports: [
+        FormsModule,
+        MaterialDesignModule,
+        MatIconTestingModule
+      ]
     })
     .compileComponents();
   }));

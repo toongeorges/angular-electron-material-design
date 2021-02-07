@@ -1,4 +1,6 @@
 import { waitForAsync, ComponentFixture, TestBed } from '@angular/core/testing';
+import { FormsModule } from '@angular/forms';
+import { MaterialDesignModule } from '../../core/modules/material-design/material-design.module';
 
 import { CheckboxComponent } from './checkbox.component';
 
@@ -8,7 +10,11 @@ describe('CheckboxComponent', () => {
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ CheckboxComponent ]
+      declarations: [ CheckboxComponent ],
+      imports: [
+        FormsModule,
+        MaterialDesignModule
+      ]
     })
     .compileComponents();
   }));

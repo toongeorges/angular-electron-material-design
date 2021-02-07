@@ -1,4 +1,7 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
+import { MaterialDesignModule } from '../../core/modules/material-design/material-design.module';
+import { MatIcon } from '@angular/material/icon';
+import { MatIconTestingModule } from '@angular/material/icon/testing';
 
 import { BadgeComponent } from './badge.component';
 
@@ -8,7 +11,8 @@ describe('BadgeComponent', () => {
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ BadgeComponent ]
+      declarations: [ BadgeComponent, MatIcon ],
+      imports: [ MaterialDesignModule, MatIconTestingModule ]
     })
     .compileComponents();
   }));

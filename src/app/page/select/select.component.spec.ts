@@ -1,4 +1,8 @@
 import { waitForAsync, ComponentFixture, TestBed } from '@angular/core/testing';
+import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ReactiveFormsModule } from '@angular/forms';
+import { MaterialDesignModule } from '../../core/modules/material-design/material-design.module';
 
 import { SelectComponent } from './select.component';
 
@@ -8,7 +12,13 @@ describe('SelectComponent', () => {
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ SelectComponent ]
+      declarations: [ SelectComponent ],
+      imports: [
+        BrowserModule,
+        BrowserAnimationsModule,
+        ReactiveFormsModule,
+        MaterialDesignModule
+      ]
     })
     .compileComponents();
   }));

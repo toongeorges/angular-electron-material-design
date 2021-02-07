@@ -1,4 +1,8 @@
 import { waitForAsync, ComponentFixture, TestBed } from '@angular/core/testing';
+import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule } from '@angular/forms';
+import { MaterialDesignModule } from '../../core/modules/material-design/material-design.module';
 
 import { RipplesComponent } from './ripples.component';
 
@@ -8,7 +12,13 @@ describe('RipplesComponent', () => {
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ RipplesComponent ]
+      declarations: [ RipplesComponent ],
+      imports: [
+        BrowserModule,
+        BrowserAnimationsModule,
+        FormsModule,
+        MaterialDesignModule
+      ]
     })
     .compileComponents();
   }));

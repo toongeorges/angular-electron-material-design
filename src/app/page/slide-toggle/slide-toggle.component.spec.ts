@@ -1,4 +1,6 @@
 import { waitForAsync, ComponentFixture, TestBed } from '@angular/core/testing';
+import { FormsModule } from '@angular/forms';
+import { MaterialDesignModule } from '../../core/modules/material-design/material-design.module';
 
 import { SlideToggleComponent } from './slide-toggle.component';
 
@@ -8,7 +10,11 @@ describe('SlideToggleComponent', () => {
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ SlideToggleComponent ]
+      declarations: [ SlideToggleComponent ],
+      imports: [
+        FormsModule,
+        MaterialDesignModule
+      ]
     })
     .compileComponents();
   }));
