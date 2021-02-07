@@ -1,6 +1,3 @@
-import 'reflect-metadata';
-import '../polyfills';
-
 import { BrowserModule, DomSanitizer } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';

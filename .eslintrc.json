@@ -42,13 +42,14 @@
           }
         ],
         "@typescript-eslint/no-empty-function": 0,
-        "@typescript-eslint/no-var-requires": 0,
         "@typescript-eslint/no-explicit-any": 0,
+        "@typescript-eslint/no-var-requires": 0,
         "@typescript-eslint/no-unsafe-call": 0,
         "@typescript-eslint/no-unsafe-member-access": 0,
         "@typescript-eslint/no-unsafe-assignment": 0,
         "@typescript-eslint/no-unsafe-return": 0,
         "@typescript-eslint/no-floating-promises": 0,
+        "@typescript-eslint/semi": "error",
         "@angular-eslint/use-injectable-provided-in": "error",
         "@angular-eslint/no-attribute-decorator": "error"
       }
@@ -58,7 +59,7 @@
       "parser": "@angular-eslint/template-parser",
       "plugins": ["@angular-eslint/template"],
       "rules": {
-          "@angular-eslint/template/banana-in-a-box": "error",
+          "@angular-eslint/template/banana-in-box": "error",
           "@angular-eslint/template/no-negated-async": "error"
       }
     }

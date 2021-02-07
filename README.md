@@ -60,7 +60,7 @@ e.g. to test the production build under Linux:
 
 ``` bash
 npm run electron:build
-release/angular-electron-8.0.5.AppImage --no-sandbox
+release/angular-electron-9.0.3.AppImage --no-sandbox
 ```
 
 ## More Info
