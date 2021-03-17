@@ -19,13 +19,13 @@ This project aims to integrate 3 different projects:
 
 ## Getting Started
 
-Clone this repository locally :
+Clone this repository locally:
 
 ``` bash
 git clone https://github.com/toongeorges/angular-electron-material-design.git
 ```
 
-Install dependencies with npm :
+Install dependencies with npm:
 
 ``` bash
 npm install
@@ -60,7 +60,7 @@ e.g. to test the production build under Linux:
 
 ``` bash
 npm run electron:build
-release/angular-electron-9.0.3.AppImage --no-sandbox
+release/angular-electron-9.0.4.AppImage --no-sandbox
 ```
 
 ## More Info
@@ -73,14 +73,12 @@ release/angular-electron-9.0.3.AppImage --no-sandbox
   - https://material.io/design
 - about Material Design Icons, check https://materialdesignicons.com/
 
-[license-badge]: https://img.shields.io/badge/license-Apache2-blue.svg?style=style=flat-square
-[license]: https://github.com/toongeorges/angular-electron-material-design/blob/master/LICENSE.md
 [prs-badge]: https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square
 [prs]: http://makeapullrequest.com
 [github-watch-badge]: https://img.shields.io/github/watchers/toongeorges/angular-electron-material-design.svg?style=social
 [github-watch]: https://github.com/toongeorges/angular-electron-material-design/watchers
 [github-star-badge]: https://img.shields.io/github/stars/toongeorges/angular-electron-material-design.svg?style=social
 [github-star]: https://github.com/toongeorges/angular-electron-material-design/stargazers
-[twitter]: https://twitter.com/intent/tweet?text=Check%20out%20angular-electron-material-design!%20https://github.com/toongeorges/angular-electron-material-design%20%F0%9F%91%8D
 [twitter-badge]: https://img.shields.io/twitter/url/https/github.com/toongeorges/angular-electron-material-design.svg?style=social
+[twitter]: https://twitter.com/intent/tweet?text=Check%20out%20angular-electron-material-design!%20https://github.com/toongeorges/angular-electron-material-design%20%F0%9F%91%8D
 [maintained-badge]: https://img.shields.io/badge/maintained-yes-brightgreen
