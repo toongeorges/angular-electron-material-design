@@ -43,17 +43,15 @@
     "version": "conventional-changelog -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md",
     "lint": "ng lint"
   },
-  "dependencies": {
-    "@angular/animations": "11.1.2",
-    "@angular/cdk": "11.1.2",
-    "@angular/forms": "11.1.2",
-    "@angular/material": "11.1.2",
-    "@angular/material-moment-adapter": "11.1.2",
+  "dependencies": {},
+  "devDependencies": {
+    "@angular/animations": "11.2.5",
+    "@angular/cdk": "11.2.4",
+    "@angular/material": "11.2.4",
+    "@angular/material-moment-adapter": "11.2.4",
     "@mdi/angular-material": "5.9.55",
     "copyfiles": "2.4.1",
-    "moment": "2.29.1"
-  },
-  "devDependencies": {
+    "moment": "2.29.1",
     "@angular-builders/custom-webpack": "11.0.0",
     "@angular-devkit/build-angular": "0.1102.0",
     "@angular-eslint/builder": "1.2.0",
