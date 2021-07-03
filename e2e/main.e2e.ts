@@ -3,7 +3,7 @@ import { SpectronClient } from 'spectron';
 
 import commonSetup from './common-setup';
 
-describe('angular-electron App', function () {
+describe('angular-electron App', function() {
 
   commonSetup.apply(this);
 
@@ -13,15 +13,16 @@ describe('angular-electron App', function () {
     client = this.app.client;
   });
 
-  it('creates initial windows', async function () {
+  it('creates initial windows', async function() {
     const count = await client.getWindowCount();
     expect(count).to.equal(1);
   });
 
-  it('should display message saying App works !', async function () {
-    const elem = await client.$('app-home h1');
+  it('should display a toolbar with the title "Material Design Components" and the option to select a theme', async function() {
+    const elem = await client.$('mat-toolbar');
     const text = await elem.getText();
-    expect(text).to.equal('App works !');
+    expect(text).to.include('Material Design Components');
+    expect(text).to.include('Select Theme');
   });
 
 });
