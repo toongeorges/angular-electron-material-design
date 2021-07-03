@@ -6,16 +6,24 @@
     "baseUrl": "",
     "types": []
   },
-  "include": [
+  "files": [
     "main.ts",
-    "polyfill.ts"
+    "polyfills.ts"
+  ],
+  "include": [
+    "**/*.d.ts"
   ],
   "exclude": [
     "**/*.spec.ts"
   ],
   "angularCompilerOptions": {
+    "strictTemplates": true,
     "fullTemplateTypeCheck": true,
+    "annotateForClosureCompiler": true,
     "strictInjectionParameters": true,
-    "preserveWhitespaces": true
+    "skipTemplateCodegen": false,
+    "preserveWhitespaces": true,
+    "skipMetadataEmit": false,
+    "disableTypeScriptVersionCheck": true
   }
 }

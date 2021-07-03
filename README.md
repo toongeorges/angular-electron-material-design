@@ -23,19 +23,19 @@ This project aims to integrate 3 different projects:
 
 ## Getting Started
 
-Clone this repository locally:
+*Clone this repository locally:*
 
 ``` bash
 git clone https://github.com/toongeorges/angular-electron-material-design.git
 ```
 
-Install dependencies with npm:
+*Install dependencies with npm:*
 
 ``` bash
 npm install
 ```
 
-Under Linux:
+*Under Linux:*
 
 ``` bash
 sudo chown root node_modules/electron/dist/chrome-sandbox
@@ -53,7 +53,7 @@ You can use your Angular + Electron app in a local development environment with 
 ## Other Commands
 
 |Command|Description|
-|--|--|
+| ---- | ---- |
 |`npm run ng:serve`| Execute the app in the browser |
 |`npm run build`| Build the app. Your built files are in the /dist folder. |
 |`npm run build:prod`| Build the app with Angular aot. Your built files are in the /dist folder. |
@@ -64,7 +64,7 @@ e.g. to test the production build under Linux:
 
 ``` bash
 npm run electron:build
-release/angular-electron-9.0.4.AppImage --no-sandbox
+release/angular-electron-10.0.2.AppImage --no-sandbox
 ```
 
 ## More Info

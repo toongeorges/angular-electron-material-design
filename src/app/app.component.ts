@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ElectronService } from './core/services/electron/electron.service';
 import { TranslateService } from '@ngx-translate/core';
-import { AppConfig } from '../environments/environment';
+import { APP_CONFIG } from '../environments/environment';
 import { OverlayContainer } from '@angular/cdk/overlay';
 
 @Component({
@@ -18,7 +18,7 @@ export class AppComponent implements OnInit {
     private overlayContainer: OverlayContainer
   ) {
     this.translate.setDefaultLang('en');
-    console.log('AppConfig', AppConfig);
+    console.log('APP_CONFIG', APP_CONFIG);
 
     if (electronService.isElectron) {
       console.log(process.env);

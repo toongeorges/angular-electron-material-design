@@ -1,6 +1,89 @@
+## <small>10.0.2 (2021-06-25)</small>
+
+* ci/ workflow ubuntu without test ([2b819d7](https://github.com/maximegris/angular-electron/commit/2b819d7))
+* fix/ spectron e2e test ([742095f](https://github.com/maximegris/angular-electron/commit/742095f))
+* ref/ set default angular eslint rules ([7d531d1](https://github.com/maximegris/angular-electron/commit/7d531d1))
+
+
+
+## <small>10.0.1 (2021-06-19)</small>
+
+* [Bumped Version] 10.0.1 ([9b79616](https://github.com/maximegris/angular-electron/commit/9b79616))
+* fix/ use node 3rd party libraries in renderer process ([1fb08a7](https://github.com/maximegris/angular-electron/commit/1fb08a7))
+* ref/ eslint conf ([af0a677](https://github.com/maximegris/angular-electron/commit/af0a677))
+* update README (electron builder two package structure) ([2e29232](https://github.com/maximegris/angular-electron/commit/2e29232))
+* Update README.md ([33f5f6d](https://github.com/maximegris/angular-electron/commit/33f5f6d))
+
+
+
+## 10.0.0 (2021-05-30)
+
+* [Bumped Version] 10.0.0 ([987e996](https://github.com/maximegris/angular-electron/commit/987e996))
+* [Bumped Version] 10.0.0 ([38f58de](https://github.com/maximegris/angular-electron/commit/38f58de))
+* add HOW_TO.md ([3a85294](https://github.com/maximegris/angular-electron/commit/3a85294))
+* fix/ github actions - angular-cli need node 12+ ([154d3fc](https://github.com/maximegris/angular-electron/commit/154d3fc))
+* fix/ github actions - angular12 need node 11+ ([323aeb8](https://github.com/maximegris/angular-electron/commit/323aeb8))
+* github action - node 12/14/15 ([dd9cf0d](https://github.com/maximegris/angular-electron/commit/dd9cf0d))
+* ref/ electron builder two packages build ([d533e49](https://github.com/maximegris/angular-electron/commit/d533e49))
+* ref/ move how to install with ng add in HOW_TO.md ([34e1232](https://github.com/maximegris/angular-electron/commit/34e1232))
+* Upgrade to Angular 12 / Electron 13 ([fc006d2](https://github.com/maximegris/angular-electron/commit/fc006d2))
+
+
+
+## <small>9.0.8 (2021-05-30)</small>
+
+* [Bumped Version] 9.0.8 ([21197ab](https://github.com/maximegris/angular-electron/commit/21197ab))
+* Added how to install Angular Material to readme ([d904101](https://github.com/maximegris/angular-electron/commit/d904101))
+* fix README typo ([aa691d9](https://github.com/maximegris/angular-electron/commit/aa691d9))
+* Update electron version ([b1f4451](https://github.com/maximegris/angular-electron/commit/b1f4451))
+* Update electron version ([494c607](https://github.com/maximegris/angular-electron/commit/494c607))
+* fix: solving bug related in fsevents/fsevents#320 ([5b091ca](https://github.com/maximegris/angular-electron/commit/5b091ca)), closes [fsevents/fsevents#320](https://github.com/fsevents/fsevents/issues/320)
+
+
+
+## <small>9.0.7 (2021-04-07)</small>
+
+* [Bumped Version] 9.0.7 ([b8371ee](https://github.com/maximegris/angular-electron/commit/b8371ee))
+* Account for the change in context isolation with Electron 12 ([d08ae8f](https://github.com/maximegris/angular-electron/commit/d08ae8f))
+* fix/ angular.json - files to lint ([ec7ce0c](https://github.com/maximegris/angular-electron/commit/ec7ce0c))
+* misc/ vscode debug ([f4225a3](https://github.com/maximegris/angular-electron/commit/f4225a3))
+* montée version Angular 11.2.8 / Electrion 12.0.2 ([371dafa](https://github.com/maximegris/angular-electron/commit/371dafa))
+* Update FUNDING.yml ([54a42eb](https://github.com/maximegris/angular-electron/commit/54a42eb))
+* Update FUNDING.yml ([3749cfa](https://github.com/maximegris/angular-electron/commit/3749cfa))
+
+
+
+## <small>9.0.6 (2021-03-21)</small>
+
+* [Bumped Version] 9.0.6 ([0a7842f](https://github.com/maximegris/angular-electron/commit/0a7842f))
+* Create pull_request_template.md ([adac86e](https://github.com/maximegris/angular-electron/commit/adac86e))
+* fix/ eslint parsing 'parserOptions.project' ([08ce022](https://github.com/maximegris/angular-electron/commit/08ce022))
+* img for loading the portable .exe ([5c18d64](https://github.com/maximegris/angular-electron/commit/5c18d64))
+* misc/ add code of conduct ([742c9fb](https://github.com/maximegris/angular-electron/commit/742c9fb))
+* misc/ readme typo ([f4d3ebb](https://github.com/maximegris/angular-electron/commit/f4d3ebb))
+* misc/ remove useless files from final package ([414d61b](https://github.com/maximegris/angular-electron/commit/414d61b))
+* misc/ Update issue templates ([2dede45](https://github.com/maximegris/angular-electron/commit/2dede45))
+
+
+
+## <small>9.0.5 (2021-03-19)</small>
+
+* [Bumped version] 9.0.5 ([2e8e630](https://github.com/maximegris/angular-electron/commit/2e8e630))
+* add github actions badges ([6b505e3](https://github.com/maximegris/angular-electron/commit/6b505e3))
+* github actions on master & puul request ([e474264](https://github.com/maximegris/angular-electron/commit/e474264))
+* misc / upgrade to angular 11.2.6 ([982cbac](https://github.com/maximegris/angular-electron/commit/982cbac))
+* misc/ upgrade angular-eslint to 2.0.2 ([b8230c9](https://github.com/maximegris/angular-electron/commit/b8230c9))
+* misc/ upgrade to Electron 12.0.1 ([d2f9fc2](https://github.com/maximegris/angular-electron/commit/d2f9fc2))
+* redirect to github actions when click on badges ([a26d5f1](https://github.com/maximegris/angular-electron/commit/a26d5f1))
+* ref/ replace electron.remote (deprecated) by @electron/remote ([8a4b624](https://github.com/maximegris/angular-electron/commit/8a4b624))
+* remove travisci ([831ea51](https://github.com/maximegris/angular-electron/commit/831ea51))
+* set github actions ([edb6f2a](https://github.com/maximegris/angular-electron/commit/edb6f2a))
+
+
+
 ## <small>9.0.4 (2021-02-13)</small>
 
-* [Bumped Version] 9.0.4 ([3c2c071](https://github.com/maximegris/angular-electron/commit/3c2c071))
+* [Bumped Version] 9.0.4 ([e6d0aa6](https://github.com/maximegris/angular-electron/commit/e6d0aa6))
 * extractCss true by default & deprecated ([4af9def](https://github.com/maximegris/angular-electron/commit/4af9def))
 * Fix typo in introduction ([c3b8258](https://github.com/maximegris/angular-electron/commit/c3b8258))
 * misc/ upgrade to Angular 11.2.0 & Electrion 11.2.0 ([0662793](https://github.com/maximegris/angular-electron/commit/0662793))
