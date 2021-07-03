@@ -39,13 +39,13 @@ export class AppComponent implements OnInit {
       //ignore change
     } else {
       if (
-        (theme == 'dark-theme')
-     || (theme == 'light-theme')
-     || (theme == 'custom-theme')
+        (theme === 'dark-theme')
+     || (theme === 'light-theme')
+     || (theme === 'custom-theme')
       ) {
         this.resetTheme(theme);
       } else {
-        console.error("Unknown theme: " + theme);
+        console.error('Unknown theme: ' + theme);
       }
     }
   }
