@@ -3,9 +3,6 @@ import * as path from 'path';
 import * as fs from 'fs';
 import * as url from 'url';
 
-// Initialize remote module
-require('@electron/remote/main').initialize();
-
 let win: BrowserWindow = null;
 const args = process.argv.slice(1),
   serve = args.some(val => val === '--serve');
@@ -24,17 +21,15 @@ function createWindow(): BrowserWindow {
     webPreferences: {
       nodeIntegration: true,
       allowRunningInsecureContent: (serve) ? true : false,
-      contextIsolation: false,  // false if you want to run 2e2 test with Spectron
-      enableRemoteModule : true // true if you want to run 2e2 test  with Spectron or use remote module in renderer context (ie. Angular)
+      contextIsolation: false,  // false if you want to run e2e test with Spectron
     },
   });
-  
 
   if (serve) {
-    win.webContents.openDevTools();
-    require('electron-reload')(__dirname, {
-      electron: require(path.join(__dirname, '/../node_modules/electron'))
-    });
+    const debug = require('electron-debug');
+    debug();
+
+    require('electron-reloader')(module);
     win.loadURL('http://localhost:4200');
   } else {
     // Path when running electron executable
