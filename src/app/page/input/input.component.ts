@@ -35,8 +35,20 @@ export class InputComponent implements OnInit {
   }
 
   openFolderDialog() {
+    console.error("electron is sometimes much more complicated than it needs to be");
+    console.error("check out https://www.electronjs.org/docs/api/dialog what is supposed to happen");
+    console.error("though this does NOT happen out of the box");
+    console.error(
+      "look for clues how to fix the electron usability bug " +
+      "at https://www.electronjs.org/docs/latest/tutorial/context-isolation " +
+      "and https://stackoverflow.com/questions/57807459/how-to-use-preload-js-properly-in-electron " +
+      "and https://medium.com/developer-rants/opening-system-dialogs-in-electron-from-the-renderer-6daf49782fd8"
+    );
+    console.log("I stopped supporting this feature.");
+
     //see https://www.electronjs.org/docs/api/dialog
-    this.electronService.remote.dialog.showOpenDialog(
+    /*
+    this.electronService.dialog.showOpenDialog(
       { properties: ['openDirectory'] }
     ).then(result => {
       console.log("The folder has been selected: " + !result.canceled)
@@ -47,5 +59,6 @@ export class InputComponent implements OnInit {
     }).catch(err => {
       console.log(err);
     });
+    */
   }
 }

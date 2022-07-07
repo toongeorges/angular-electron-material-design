@@ -1,5 +1,91 @@
+## <small>10.5.2 (2022-04-23)</small>
+
+* Bump plist from 3.0.4 to 3.0.5 ([bedaba3](https://github.com/maximegris/angular-electron/commit/bedaba3))
+* fix/ macos action ([f1d89b1](https://github.com/maximegris/angular-electron/commit/f1d89b1))
+* misc/ add electron-reloader ([c885a24](https://github.com/maximegris/angular-electron/commit/c885a24))
+
+
+
+## <small>10.5.1 (2022-04-02)</small>
+
+* [Bumped Version] 10.5.1 ([ad23ace](https://github.com/maximegris/angular-electron/commit/ad23ace))
+* fix/ macos action ([ff71c32](https://github.com/maximegris/angular-electron/commit/ff71c32))
+* fix/ remove demo.gif ([ccd468d](https://github.com/maximegris/angular-electron/commit/ccd468d))
+* migrate to main branch ([2c7cd98](https://github.com/maximegris/angular-electron/commit/2c7cd98))
+* misc/ Upgrade to Electron 18 ([7251676](https://github.com/maximegris/angular-electron/commit/7251676))
+* Set theme jekyll-theme-cayman ([1f0ba34](https://github.com/maximegris/angular-electron/commit/1f0ba34))
+* fix: github action ([d6b5784](https://github.com/maximegris/angular-electron/commit/d6b5784))
+
+
+
+## 10.5.0 (2022-02-24)
+
+* [Bumped Version] 10.5.0 ([92fe8ed](https://github.com/maximegris/angular-electron/commit/92fe8ed))
+* Bump follow-redirects from 1.14.5 to 1.14.7 ([606d54d](https://github.com/maximegris/angular-electron/commit/606d54d))
+* Bump log4js from 6.3.0 to 6.4.0 ([27adf26](https://github.com/maximegris/angular-electron/commit/27adf26))
+* Bump nanoid from 3.1.30 to 3.2.0 ([e05d98b](https://github.com/maximegris/angular-electron/commit/e05d98b))
+* fix/ global error in console when building web app only ([58424a2](https://github.com/maximegris/angular-electron/commit/58424a2))
+* misc/ github actions on 14.x, 16.x, 17.x ([4fe8c2c](https://github.com/maximegris/angular-electron/commit/4fe8c2c))
+* misc/ Upgrade to Electron 17 ([4964bae](https://github.com/maximegris/angular-electron/commit/4964bae))
+* use local electron from devDependencies instead of npx ([a029060](https://github.com/maximegris/angular-electron/commit/a029060))
+
+
+
+## <small>10.4.1 (2021-11-17)</small>
+
+* [Bumped Version] 10.4.0 ([7a4f527](https://github.com/maximegris/angular-electron/commit/7a4f527))
+* [Bumped Version] 10.4.1 ([c5096fa](https://github.com/maximegris/angular-electron/commit/c5096fa))
+* misc/ Upgrade eslint version ([4321d9d](https://github.com/maximegris/angular-electron/commit/4321d9d))
+* misc/ upgrade to Angular 12.2.13 ([74df637](https://github.com/maximegris/angular-electron/commit/74df637))
+* misc/ Upgrade to Angular 13.0.0 ([99e9f35](https://github.com/maximegris/angular-electron/commit/99e9f35))
+* misc/ upgrade to Electron 16 ([65d285c](https://github.com/maximegris/angular-electron/commit/65d285c))
+* misc/ upgrade wait-on dependency ([e427f26](https://github.com/maximegris/angular-electron/commit/e427f26))
+
+
+
+## <small>10.3.1 (2021-11-17)</small>
+
+* [Bumped Version] 10.3.1 ([ebde830](https://github.com/maximegris/angular-electron/commit/ebde830))
+* fix/ TS Config : module resolution in main process ([a9d3044](https://github.com/maximegris/angular-electron/commit/a9d3044))
+
+
+
+## 10.3.0 (2021-11-15)
+
+* [Bumped Version] 10.3.0 ([20e9142](https://github.com/maximegris/angular-electron/commit/20e9142))
+* fix/Polyfill Node.js core modules in Webpack (5+) ([e3c0d9f](https://github.com/maximegris/angular-electron/commit/e3c0d9f))
+* ref/ move angularCompilerOptions to tsconfig ([e07410b](https://github.com/maximegris/angular-electron/commit/e07410b))
+* remove include statement from base tsconfig.json ([aebec1a](https://github.com/maximegris/angular-electron/commit/aebec1a))
+* Update README.md ([47fc3ff](https://github.com/maximegris/angular-electron/commit/47fc3ff))
+
+
+
+## 10.2.0 (2021-11-14)
+
+* [Bumped Version] 10.2.0 ([edb5269](https://github.com/maximegris/angular-electron/commit/edb5269))
+* add missing @ on the SCSS import for Material theme fix ([dc9ee14](https://github.com/maximegris/angular-electron/commit/dc9ee14))
+* bugfix/ electron builder 22.11 needs Node 14+ ([c7dbb3f](https://github.com/maximegris/angular-electron/commit/c7dbb3f))
+* Bump electron from 13.1.7 to 13.3.0 ([fe0280a](https://github.com/maximegris/angular-electron/commit/fe0280a))
+* remove screenshot test ([62facb1](https://github.com/maximegris/angular-electron/commit/62facb1))
+* replace Spectron by Playwright ([558c646](https://github.com/maximegris/angular-electron/commit/558c646))
+* Update README.md ([4b44d8b](https://github.com/maximegris/angular-electron/commit/4b44d8b))
+* Update README.md ([c385d6a](https://github.com/maximegris/angular-electron/commit/c385d6a))
+
+
+
+## 10.1.0 (2021-07-17)
+
+* [Bumped Version] 10.1.0 ([f399d75](https://github.com/maximegris/angular-electron/commit/f399d75))
+* Fix typo & some spacing ([d2b6ee0](https://github.com/maximegris/angular-electron/commit/d2b6ee0))
+* Fix typo in branch section ([623d0fa](https://github.com/maximegris/angular-electron/commit/623d0fa))
+* ref/action-xvfb-linux ([60b591b](https://github.com/maximegris/angular-electron/commit/60b591b))
+* Upgrade to Angular 12.1.2 / Electron 13.1.7 ([8274ae3](https://github.com/maximegris/angular-electron/commit/8274ae3))
+
+
+
 ## <small>10.0.2 (2021-06-25)</small>
 
+* [Bumped Version] 10.0.2 ([e8f36a3](https://github.com/maximegris/angular-electron/commit/e8f36a3))
 * ci/ workflow ubuntu without test ([2b819d7](https://github.com/maximegris/angular-electron/commit/2b819d7))
 * fix/ spectron e2e test ([742095f](https://github.com/maximegris/angular-electron/commit/742095f))
 * ref/ set default angular eslint rules ([7d531d1](https://github.com/maximegris/angular-electron/commit/7d531d1))
